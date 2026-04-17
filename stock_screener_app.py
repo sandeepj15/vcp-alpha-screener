@@ -4,13 +4,15 @@ import json
 import os
 import subprocess
 import time
+import sys
 from datetime import datetime
 
 # --- CONFIGURATION ---
-DATA_FILE = "stock_data_for_ai.json"
-VCP_SCRIPT = "institutional-trader/scripts/vcp_analyzer.py"
-FUND_SCRIPT = "institutional-trader/scripts/fundamental_ranker.py"
-SCAN_SCRIPT = "scanner.py"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "stock_data_for_ai.json")
+VCP_SCRIPT = os.path.join(BASE_DIR, "institutional-trader/scripts/vcp_analyzer.py")
+FUND_SCRIPT = os.path.join(BASE_DIR, "institutional-trader/scripts/fundamental_ranker.py")
+SCAN_SCRIPT = os.path.join(BASE_DIR, "scanner.py")
 
 st.set_page_config(page_title="Institutional Stock Screener", layout="wide")
 
@@ -18,7 +20,7 @@ st.set_page_config(page_title="Institutional Stock Screener", layout="wide")
 
 def run_script(script_path, input_file):
     try:
-        result = subprocess.run(["python3", script_path, input_file], capture_output=True, text=True)
+        result = subprocess.run([sys.executable, script_path, input_file], capture_output=True, text=True)
         if result.returncode == 0:
             return json.loads(result.stdout)
         else:
@@ -93,7 +95,7 @@ with st.sidebar:
     st.header("Settings")
     if st.button("🔄 Refresh Market Data"):
         with st.spinner("Scanning Nifty 500 for fresh signals..."):
-            res = subprocess.run(["python3", SCAN_SCRIPT], capture_output=True, text=True)
+            res = subprocess.run([sys.executable, SCAN_SCRIPT], capture_output=True, text=True)
             if res.returncode == 0:
                 st.success("Data refreshed!")
                 st.rerun()
