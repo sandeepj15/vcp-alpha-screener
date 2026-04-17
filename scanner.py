@@ -5,7 +5,7 @@ import time
 import yfinance as yf
 from datetime import datetime
 from tradingview_ta import Interval, get_multiple_analysis
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # --- CONFIG ---
 SCREENER = "india"
@@ -51,36 +51,45 @@ def get_technicals(tickers):
         except: continue
     return signals
 
-def fetch_fundamentals(strong_movers):
-    """Fetches key fundamentals via yfinance."""
+def fetch_single_fundamental(s):
+    """Worker function for single stock fundamental fetch."""
+    try:
+        ticker = s['ticker']
+        stock = yf.Ticker(f"{ticker}.NS")
+        info = stock.info
+        return {
+            "ticker": ticker,
+            "price": round(s['tech_1d'].get('close', 0), 2),
+            "is_double_confirmed": s['double_confirmed'],
+            "tech_1d": {k: s['tech_1d'].get(k) for k in ['RSI', 'EMA20', 'EMA50', 'MACD.macd', 'MACD.signal']},
+            "tech_4h": {k: s['tech_4h'].get(k) for k in ['RSI', 'EMA20', 'EMA50', 'MACD.macd', 'MACD.signal']},
+            "sector": info.get('sector', 'Others'),
+            "timestamp": time.time(),
+            "fundamentals": {
+                "trailingPE": info.get('trailingPE'),
+                "forwardPE": info.get('forwardPE'),
+                "debtToEquity": info.get('debtToEquity'),
+                "returnOnEquity": info.get('returnOnEquity'),
+            }
+        }
+    except: return None
+
+def fetch_fundamentals_parallel(strong_movers):
+    """Parallelized fundamental fetching using ThreadPoolExecutor."""
     payload = []
-    for s in strong_movers:
-        try:
-            ticker = s['ticker']
-            stock = yf.Ticker(f"{ticker}.NS")
-            info = stock.info
-            payload.append({
-                "ticker": ticker,
-                "price": round(s['tech_1d'].get('close', 0), 2),
-                "is_double_confirmed": s['double_confirmed'],
-                "tech_1d": {k: s['tech_1d'].get(k) for k in ['RSI', 'EMA20', 'EMA50', 'MACD.macd', 'MACD.signal']},
-                "tech_4h": {k: s['tech_4h'].get(k) for k in ['RSI', 'EMA20', 'EMA50', 'MACD.macd', 'MACD.signal']},
-                "sector": info.get('sector', 'Others'),
-                "timestamp": time.time(),
-                "fundamentals": {
-                    "trailingPE": info.get('trailingPE'),
-                    "forwardPE": info.get('forwardPE'),
-                    "debtToEquity": info.get('debtToEquity'),
-                    "returnOnEquity": info.get('returnOnEquity'),
-                }
-            })
-        except: continue
+    # Using 5 workers for speed (Cloud friendly)
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        future_to_stock = {executor.submit(fetch_single_fundamental, s): s for s in strong_movers}
+        for future in as_completed(future_to_stock):
+            res = future.result()
+            if res: payload.append(res)
     return payload
 
 def run_scan():
     symbols = fetch_nse_symbols()
     strong_movers = get_technicals(symbols)
-    data = fetch_fundamentals(strong_movers)
+    # Parallelize the slowest part
+    data = fetch_fundamentals_parallel(strong_movers)
     with open(DATA_FILE, 'w') as f:
         json.dump(data, f, indent=2)
     return data

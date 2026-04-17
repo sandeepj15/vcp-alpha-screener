@@ -47,6 +47,10 @@ def load_data():
         else:
             st.sidebar.success(f"✅ Data is fresh ({round(age_hours, 1)}h old)")
 
+    if not raw_data:
+        st.info("No stocks currently meet the primary trend criteria. Please check back later.")
+        return pd.DataFrame(columns=["Ticker", "Sector", "Combined Score", "VCP Score", "Fund Score"])
+    
     vcp_results = run_script(VCP_SCRIPT, DATA_FILE)
     fund_results = run_script(FUND_SCRIPT, DATA_FILE)
     
