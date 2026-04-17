@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE_DIR, "stock_data_for_ai.json")
+SYMBOL_CACHE = os.path.join(BASE_DIR, "nse_symbols_cache.json")
 VCP_SCRIPT = os.path.join(BASE_DIR, "institutional-trader/scripts/vcp_analyzer.py")
 FUND_SCRIPT = os.path.join(BASE_DIR, "institutional-trader/scripts/fundamental_ranker.py")
 
@@ -21,32 +22,58 @@ st.set_page_config(page_title="Institutional Stock Screener", layout="wide")
 # --- SCANNER LOGIC (Integrated for Cloud Stability) ---
 
 def fetch_nse_symbols():
+    """Fetches symbols from NSE with multiple fallbacks."""
+    # 1. Try Live NSE API
     headers = {'User-Agent': 'Mozilla/5.0'}
     url = "https://www.nseindia.com/api/equity-stockIndices?index=NIFTY%20500"
     session = requests.Session()
-    session.get("https://www.nseindia.com", headers=headers, timeout=10)
     try:
-        resp = session.get(url, headers=headers, timeout=10)
-        return [item['symbol'] for item in resp.json().get('data', [])]
+        session.get("https://www.nseindia.com", headers=headers, timeout=5)
+        resp = session.get(url, headers=headers, timeout=5)
+        syms = [item['symbol'] for item in resp.json().get('data', [])]
+        if syms: return syms
     except:
-        return ["RELIANCE", "TCS", "HDFCBANK", "INFY", "ICICIBANK", "AXISBANK", "TITAN", "ABB"]
+        pass
+    
+    # 2. Try Local Cache
+    if os.path.exists(SYMBOL_CACHE):
+        try:
+            with open(SYMBOL_CACHE, 'r') as f:
+                cache = json.load(f)
+                return cache.get('symbols', [])
+        except:
+            pass
+
+    # 3. Hardcoded Institutional Quality Fallback
+    return [
+        "RELIANCE", "TCS", "HDFCBANK", "INFY", "ICICIBANK", "AXISBANK", "TITAN", "ABB", 
+        "TVSMOTOR", "BSE", "MCX", "HAL", "BEL", "ADANIENT", "TATASTEEL", "SBIN", "BHARTIARTL",
+        "LICI", "ITC", "HINDALCO", "MARUTI", "BAJFINANCE", "ADANIPORTS", "COALINDIA", "ASIANPAINT"
+    ]
 
 def run_integrated_scan():
+    progress_bar = st.sidebar.progress(0)
+    status_text = st.sidebar.empty()
+    
+    status_text.text("Fetching symbols...")
     tickers = fetch_nse_symbols()
     tv_symbols = [f"NSE:{t.replace('&', 'and')}" for t in tickers]
     
+    status_text.text(f"Scanning {len(tv_symbols)} stocks...")
     signals = []
-    batch_size = 100
+    batch_size = 50
     for i in range(0, len(tv_symbols), batch_size):
         batch = tv_symbols[i:i + batch_size]
+        progress = min(1.0, (i + batch_size) / len(tv_symbols))
+        progress_bar.progress(progress)
         try:
             res_1d = get_multiple_analysis(screener="india", interval=Interval.INTERVAL_1_DAY, symbols=batch)
             res_4h = get_multiple_analysis(screener="india", interval=Interval.INTERVAL_4_HOURS, symbols=batch)
+            if not res_1d: continue
             for key in res_1d.keys():
                 analysis_1d = res_1d[key]
                 if not analysis_1d: continue
                 rec_1d = analysis_1d.summary["RECOMMENDATION"]
-                # Relaxed filter: Include BUY and STRONG_BUY
                 if "BUY" in rec_1d:
                     analysis_4h = res_4h.get(key)
                     signals.append({
@@ -58,7 +85,8 @@ def run_integrated_scan():
                     })
         except: continue
     
-    # Parallel Fundamental Fetch
+    status_text.text(f"Found {len(signals)} candidates. Fetching fundamentals...")
+    
     def fetch_fund(s):
         try:
             ticker = s['ticker']
@@ -90,6 +118,9 @@ def run_integrated_scan():
             
     with open(DATA_FILE, 'w') as f:
         json.dump(final_data, f, indent=2)
+    
+    status_text.empty()
+    progress_bar.empty()
     return final_data
 
 # --- DATA PROCESSING ---
@@ -102,22 +133,18 @@ def run_script(script_path, input_file):
         if result.returncode == 0:
             return json.loads(result.stdout)
         else:
-            st.error(f"Error running {script_path}: {result.stderr}")
             return []
     except Exception as e:
-        st.error(f"Exception running {script_path}: {e}")
         return []
 
 def load_data():
     if not os.path.exists(DATA_FILE):
-        st.warning("Data file not found. Please refresh data in the sidebar.")
         return None
     
     with open(DATA_FILE, "r") as f:
         raw_data = json.load(f)
     
     if not raw_data:
-        st.info("No stocks currently meet the primary trend criteria. Try Refreshing.")
         return pd.DataFrame(columns=["Ticker", "Sector", "Combined Score", "VCP Score", "Fund Score"])
 
     last_updated = raw_data[0].get('timestamp', 0)
@@ -171,10 +198,13 @@ st.markdown("---")
 with st.sidebar:
     st.header("Settings")
     if st.button("🔄 Refresh Market Data"):
-        with st.spinner("Scanning Nifty 500..."):
-            run_integrated_scan()
-            st.success("Data refreshed!")
-            st.rerun()
+        with st.spinner("Processing..."):
+            data = run_integrated_scan()
+            if data:
+                st.success(f"Successfully updated {len(data)} stocks!")
+                st.rerun()
+            else:
+                st.error("Scan returned zero results. Market might be closed or API restricted.")
     
     st.markdown("### Filters")
     min_combined = st.slider("Min Combined Score", 0, 100, 50)
