@@ -5,20 +5,29 @@ on:
     - cron: '0 */4 * * *' # Every 4 hours
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
+permissions:
+  contents: write # Crucial: Allows the action to push data back to your repo
+
 jobs:
-  build:
+  scan:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: "requirements.txt"
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version-file: ".python-version" # Optional, uv handles this well
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
+        run: uv pip install --system -r requirements.txt
 
       - name: Run Scanner
         run: python scanner.py
