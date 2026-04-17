@@ -185,15 +185,22 @@ st.markdown("---")
 
 with st.sidebar:
     st.header("Settings")
-    if st.button("🔄 Refresh Market Data"):
-        with st.spinner("Processing..."):
-            data = run_integrated_scan()
-            if data:
-                st.success(f"Updated {len(data)} stocks!")
-                st.rerun()
-            else:
-                st.error("No signals found or APIs limited. Try again in a few minutes.")
     
+    # Show Last Updated info prominently
+    if os.path.exists(DATA_FILE):
+        with open(DATA_FILE, "r") as f:
+            try:
+                raw_data = json.load(f)
+                if raw_data:
+                    last_updated = raw_data[0].get('timestamp', 0)
+                    dt_object = datetime.fromtimestamp(last_updated)
+                    st.info(f"📅 **Last Updated:**\n{dt_object.strftime('%Y-%m-%d %H:%M')}")
+            except:
+                pass
+    
+    st.success("🤖 **Automated Data:**\nUpdated every 4 hours via GitHub Actions.")
+    
+    st.markdown("---")
     st.markdown("### Filters")
     min_combined = st.slider("Min Combined Score", 0, 100, 50)
     
