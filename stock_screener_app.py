@@ -188,15 +188,23 @@ with st.sidebar:
     
     # Show Last Updated info prominently
     if os.path.exists(DATA_FILE):
-        with open(DATA_FILE, "r") as f:
-            try:
+        # 1. Get file modification time as primary reliable source
+        mtime = os.path.getmtime(DATA_FILE)
+        
+        # 2. Try to get timestamp from JSON if it exists
+        try:
+            with open(DATA_FILE, "r") as f:
                 raw_data = json.load(f)
-                if raw_data:
-                    last_updated = raw_data[0].get('timestamp', 0)
-                    dt_object = datetime.fromtimestamp(last_updated)
-                    st.info(f"📅 **Last Updated:**\n{dt_object.strftime('%Y-%m-%d %H:%M')}")
-            except:
-                pass
+                if raw_data and 'timestamp' in raw_data[0]:
+                    mtime = raw_data[0]['timestamp']
+        except:
+            pass
+            
+        # 3. Convert to IST (UTC + 5:30)
+        from datetime import timedelta, timezone
+        ist_tz = timezone(timedelta(hours=5, minutes=30))
+        dt_ist = datetime.fromtimestamp(mtime, tz=ist_tz)
+        st.info(f"📅 **Last Updated (IST):**\n{dt_ist.strftime('%Y-%m-%d %H:%M')}")
     
     st.success("🤖 **Automated Data:**\nUpdated every 4 hours via GitHub Actions.")
     
