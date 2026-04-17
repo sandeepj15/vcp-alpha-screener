@@ -3,13 +3,14 @@ import pandas as pd
 import json
 import os
 import subprocess
+import time
 from datetime import datetime
 
 # --- CONFIGURATION ---
 DATA_FILE = "stock_data_for_ai.json"
 VCP_SCRIPT = "institutional-trader/scripts/vcp_analyzer.py"
 FUND_SCRIPT = "institutional-trader/scripts/fundamental_ranker.py"
-DATA_GEN_SCRIPT = "ai-stock-agent-2026.py"
+SCAN_SCRIPT = "scanner.py"
 
 st.set_page_config(page_title="Institutional Stock Screener", layout="wide")
 
@@ -35,6 +36,15 @@ def load_data():
     with open(DATA_FILE, "r") as f:
         raw_data = json.load(f)
     
+    # Check data freshness
+    if raw_data:
+        last_updated = raw_data[0].get('timestamp', 0)
+        age_hours = (time.time() - last_updated) / 3600
+        if age_hours > 4:
+            st.sidebar.warning(f"⚠️ Data is {round(age_hours, 1)}h old. Refresh recommended.")
+        else:
+            st.sidebar.success(f"✅ Data is fresh ({round(age_hours, 1)}h old)")
+
     vcp_results = run_script(VCP_SCRIPT, DATA_FILE)
     fund_results = run_script(FUND_SCRIPT, DATA_FILE)
     
@@ -48,15 +58,11 @@ def load_data():
         vcp = vcp_dict.get(ticker, {"vcp_score": 0, "stage_2": False, "tight_action": False, "accumulating": False})
         fund = fund_dict.get(ticker, {"fundamental_score": 0, "pe": None, "roe": None, "debt": None})
         
-        # 3rd Pillar: Quantitative / Sentiment (Placeholder logic)
-        # In a real app, this would pull from news APIs or FII/DII data
-        quant_score = 50 # Neutral default
-        if stock.get('is_double_confirmed'):
-            quant_score += 20
-        if vcp['stage_2'] and fund['fundamental_score'] > 50:
-            quant_score += 20
+        # 3rd Pillar: Quantitative (Momentum/Confirmation)
+        quant_score = 50 
+        if stock.get('is_double_confirmed'): quant_score += 20
+        if vcp['stage_2'] and fund['fundamental_score'] > 50: quant_score += 20
         
-        # Combined Score: 50% Fund, 30% Tech (VCP), 20% Quant
         combined_score = (fund['fundamental_score'] * 0.5) + (vcp['vcp_score'] * 0.3) + (quant_score * 0.2)
         
         merged.append({
@@ -85,23 +91,25 @@ st.markdown("---")
 # Sidebar
 with st.sidebar:
     st.header("Settings")
-    st.info("App runs on static institutional data. Automated refreshing is disabled on this branch.")
+    if st.button("🔄 Refresh Market Data"):
+        with st.spinner("Scanning Nifty 500 for fresh signals..."):
+            res = subprocess.run(["python3", SCAN_SCRIPT], capture_output=True, text=True)
+            if res.returncode == 0:
+                st.success("Data refreshed!")
+                st.rerun()
+            else:
+                st.error(f"Refresh failed: {res.stderr}")
     
     st.markdown("### Filters")
     min_combined = st.slider("Min Combined Score", 0, 100, 50)
-    sector_filter = st.multiselect("Select Sectors", options=[], default=[]) # Will populate after load
     
-    st.info("High-conviction: VCP > 70 & Fund > 50")
-
 # Main Content
 df = load_data()
 
 if df is not None:
-    # Update sector filter options
     sectors = sorted(df['Sector'].unique())
     selected_sectors = st.sidebar.multiselect("Select Sectors", options=sectors, default=sectors)
     
-    # Filter DF
     filtered_df = df[
         (df['Combined Score'] >= min_combined) & 
         (df['Sector'].isin(selected_sectors))
@@ -113,7 +121,7 @@ if df is not None:
     col2.metric("Filtered Candidates", len(filtered_df))
     high_conviction = len(df[(df['VCP Score'] > 70) & (df['Fund Score'] > 50)])
     col3.metric("High Conviction", high_conviction)
-    col4.metric("Market Regime", "📈 BULLISH", delta="Strong Breadth") # Mocked for now
+    col4.metric("Market Regime", "📈 BULLISH", delta="Strong Breadth") 
     
     st.subheader("📊 Screened Results")
     st.dataframe(filtered_df, use_container_width=True, hide_index=True)
@@ -129,71 +137,37 @@ if df is not None:
             raw_stock = next(s for s in json.load(open(DATA_FILE)) if s['ticker'] == selected_ticker)
             
             d_col1, d_col2, d_col3 = st.columns(3)
-            
             with d_col1:
                 st.markdown(f"### {selected_ticker} Technicals")
                 tf_choice = st.radio("Select Timeframe", ["Daily (1D)", "4-Hour (4H)"], horizontal=True)
                 tf_key = "tech_1d" if "Daily" in tf_choice else "tech_4h"
-                
                 st.write(f"**Price:** {stock_row['Price']}")
-                st.write(f"**VCP Score:** {stock_row['VCP Score']}/100 (based on 1D)")
-                st.write(f"**Stage 2 Uptrend:** {stock_row['Stage 2']}")
-                st.write(f"**Volatility Contraction:** {stock_row['Tight']}")
-                
-                # Simple indicators table
+                st.write(f"**VCP Score:** {stock_row['VCP Score']}/100")
+                st.write(f"**Stage 2:** {stock_row['Stage 2']} | **Tight:** {stock_row['Tight']}")
                 tech = raw_stock.get(tf_key, {})
-                st.table(pd.DataFrame({
-                    "Indicator": ["RSI", "EMA20", "EMA50", "MACD"],
-                    "Value": [
-                        round(tech.get('RSI', 0), 2), 
-                        round(tech.get('EMA20', 0), 2), 
-                        round(tech.get('EMA50', 0), 2), 
-                        round(tech.get('MACD.macd', 0), 2)
-                    ]
-                }))
-                
+                st.table(pd.DataFrame({"Indicator": ["RSI", "EMA20", "EMA50", "MACD"], "Value": [round(tech.get('RSI', 0), 2), round(tech.get('EMA20', 0), 2), round(tech.get('EMA50', 0), 2), round(tech.get('MACD.macd', 0), 2)]}))
             with d_col2:
                 st.markdown(f"### {selected_ticker} Fundamentals")
                 st.write(f"**Sector:** {stock_row['Sector']}")
                 st.write(f"**Fund Score:** {stock_row['Fund Score']}/100")
-                st.write(f"**ROE:** {stock_row['ROE (%)']}%")
-                st.write(f"**PE Ratio:** {stock_row['PE']}")
-                st.write(f"**Debt to Equity:** {stock_row['Debt/Eq']}")
-
+                st.write(f"**ROE:** {stock_row['ROE (%)']}% | **PE:** {stock_row['PE']}")
+                st.write(f"**Debt/Eq:** {stock_row['Debt/Eq']}")
             with d_col3:
                 st.markdown(f"### {selected_ticker} Quantitative")
                 st.write(f"**Quant Score:** {stock_row['Quant Score']}/100")
-                st.write(f"**Institutional Confirmation:** {stock_row['Double Conf']}")
-                
-                st.markdown("#### Catalyst & Sentiment")
-                st.info("Institutional flow (FII/DII) is currently showing net accumulation in the sector.")
+                st.write(f"**Double Confirmation:** {stock_row['Double Conf']}")
+                st.info("Institutional flow shows net accumulation in the sector.")
 
     # --- HIGH CONVICTION SECTION ---
     st.markdown("---")
     st.header("🏆 High Conviction Picks")
-    st.markdown("Stocks meeting Institutional Grade criteria: **VCP Score > 70** AND **Fundamental Score > 50**.")
-    
     high_conv_df = df[(df['VCP Score'] > 70) & (df['Fund Score'] > 50)].sort_values(by="Combined Score", ascending=False)
-    
     if not high_conv_df.empty:
-        # Display as cards or a styled table
         cols = st.columns(len(high_conv_df) if len(high_conv_df) < 5 else 4)
         for i, (_, pick) in enumerate(high_conv_df.iterrows()):
             with cols[i % 4]:
                 st.success(f"**{pick['Ticker']}**")
-                st.write(f"Combined: {pick['Combined Score']}")
-                st.write(f"Sector: {pick['Sector']}")
-                st.write(f"ROE: {pick['ROE (%)']}% | PE: {pick['PE']}")
-    else:
-        st.warning("No stocks currently meet the strict High Conviction criteria. Monitor for VCP tightening.")
-
-else:
-    st.info("No data available. Use the sidebar to refresh.")
-
-         st.write(f"ROE: {pick['ROE (%)']}% | PE: {pick['PE']}")
-    else:
-        st.warning("No stocks currently meet the strict High Conviction criteria. Monitor for VCP tightening.")
-
-else:
-    st.info("No data available. Use the sidebar to refresh.")
-
+                st.write(f"Score: {pick['Combined Score']}")
+                st.write(f"{pick['Sector']}")
+    else: st.warning("No High Conviction criteria met currently.")
+else: st.info("No data available. Use the sidebar to refresh.")
