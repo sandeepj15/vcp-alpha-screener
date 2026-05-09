@@ -1,5 +1,86 @@
 [
   {
+    "ticker": "SCI",
+    "price": 339.05,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 75.31692787429775,
+      "EMA20": 296.18816697615966,
+      "EMA50": 271.12554356416086,
+      "MACD.macd": 20.077989232616574,
+      "MACD.signal": 17.309790258479538
+    },
+    "tech_4h": {
+      "RSI": 75.37118760284973,
+      "EMA20": 311.9816791708577,
+      "EMA50": 289.8483505100448,
+      "MACD.macd": 12.847772259561395,
+      "MACD.signal": 11.76324082351898
+    },
+    "sector": "Industrials",
+    "timestamp": 1778332887.1351607,
+    "fundamentals": {
+      "trailingPE": 11.66724,
+      "forwardPE": 102.742424,
+      "debtToEquity": 32.955,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "MCX",
+    "price": 3097.8,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 73.43400252146827,
+      "EMA20": 2858.5437083359984,
+      "EMA50": 2679.928177149088,
+      "MACD.macd": 116.92481320110392,
+      "MACD.signal": 103.56411185786948
+    },
+    "tech_4h": {
+      "RSI": 75.61463542328882,
+      "EMA20": 2951.925342580796,
+      "EMA50": 2821.4230845688285,
+      "MACD.macd": 75.5633197084071,
+      "MACD.signal": 65.03169885763968
+    },
+    "sector": "Financial Services",
+    "timestamp": 1778332887.138358,
+    "fundamentals": {
+      "trailingPE": 59.17479,
+      "forwardPE": 48.34288,
+      "debtToEquity": 0.024,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "THERMAX",
+    "price": 4677.5,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 77.18528612874911,
+      "EMA20": 4016.9880980472067,
+      "EMA50": 3664.0263879260756,
+      "MACD.macd": 227.1797374703574,
+      "MACD.signal": 212.7225551498773
+    },
+    "tech_4h": {
+      "RSI": 77.66525599594502,
+      "EMA20": 4201.681822732183,
+      "EMA50": 3945.260484564595,
+      "MACD.macd": 147.75478136927904,
+      "MACD.signal": 101.55250576426587
+    },
+    "sector": "Industrials",
+    "timestamp": 1778332887.148748,
+    "fundamentals": {
+      "trailingPE": 72.99469,
+      "forwardPE": 52.311962,
+      "debtToEquity": 35.784,
+      "returnOnEquity": null
+    }
+  },
+  {
     "ticker": "CRAFTSMAN",
     "price": 8981.5,
     "is_double_confirmed": false,
@@ -18,7 +99,7 @@
       "MACD.signal": 177.90371528645852
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318468.4570744,
+    "timestamp": 1778332887.1549003,
     "fundamentals": {
       "trailingPE": 55.86552,
       "forwardPE": 29.511124,
@@ -45,92 +126,11 @@
       "MACD.signal": 15.194172918369615
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318468.5054479,
+    "timestamp": 1778332887.1723967,
     "fundamentals": {
       "trailingPE": 56.979065,
       "forwardPE": 33.42105,
       "debtToEquity": 94.847,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "THERMAX",
-    "price": 4677.5,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 77.18528612874911,
-      "EMA20": 4016.9880980472067,
-      "EMA50": 3664.0263879260756,
-      "MACD.macd": 227.1797374703574,
-      "MACD.signal": 212.7225551498773
-    },
-    "tech_4h": {
-      "RSI": 77.66525599594502,
-      "EMA20": 4201.681822732183,
-      "EMA50": 3945.260484564595,
-      "MACD.macd": 147.75478136927904,
-      "MACD.signal": 101.55250576426587
-    },
-    "sector": "Industrials",
-    "timestamp": 1778318468.5130847,
-    "fundamentals": {
-      "trailingPE": 72.99469,
-      "forwardPE": 52.311962,
-      "debtToEquity": 35.784,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "MCX",
-    "price": 3097.8,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 73.43400252146827,
-      "EMA20": 2858.5437083359984,
-      "EMA50": 2679.928177149088,
-      "MACD.macd": 116.92481320110392,
-      "MACD.signal": 103.56411185786948
-    },
-    "tech_4h": {
-      "RSI": 75.61463542328882,
-      "EMA20": 2951.925342580796,
-      "EMA50": 2821.4230845688285,
-      "MACD.macd": 75.5633197084071,
-      "MACD.signal": 65.03169885763968
-    },
-    "sector": "Financial Services",
-    "timestamp": 1778318468.521827,
-    "fundamentals": {
-      "trailingPE": 59.17479,
-      "forwardPE": 48.34288,
-      "debtToEquity": 0.024,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "SCI",
-    "price": 339.05,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 75.31692787429775,
-      "EMA20": 296.18816697615966,
-      "EMA50": 271.12554356416086,
-      "MACD.macd": 20.077989232616574,
-      "MACD.signal": 17.309790258479538
-    },
-    "tech_4h": {
-      "RSI": 75.37118760284973,
-      "EMA20": 311.9816791708577,
-      "EMA50": 289.8483505100448,
-      "MACD.macd": 12.847772259561395,
-      "MACD.signal": 11.76324082351898
-    },
-    "sector": "Industrials",
-    "timestamp": 1778318468.5763807,
-    "fundamentals": {
-      "trailingPE": 11.66724,
-      "forwardPE": 102.742424,
-      "debtToEquity": 32.955,
       "returnOnEquity": null
     }
   },
@@ -153,7 +153,7 @@
       "MACD.signal": 29.201637554163373
     },
     "sector": "Financial Services",
-    "timestamp": 1778318468.7125742,
+    "timestamp": 1778332887.272111,
     "fundamentals": {
       "trailingPE": 29.497377,
       "forwardPE": 24.75803,
@@ -180,7 +180,7 @@
       "MACD.signal": -1.1152859064387761
     },
     "sector": "Communication Services",
-    "timestamp": 1778318468.7512782,
+    "timestamp": 1778332887.2887526,
     "fundamentals": {
       "trailingPE": 36.23346,
       "forwardPE": 27.704948,
@@ -207,39 +207,12 @@
       "MACD.signal": 154.61384284701273
     },
     "sector": "Technology",
-    "timestamp": 1778318468.7537975,
+    "timestamp": 1778332887.3109033,
     "fundamentals": {
       "trailingPE": 121.95809,
       "forwardPE": 57.731075,
       "debtToEquity": 3.108,
       "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "PIDILITIND",
-    "price": 1476,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 66.96134810766294,
-      "EMA20": 1393.4205274984006,
-      "EMA50": 1393.8341369389748,
-      "MACD.macd": 17.04060975149696,
-      "MACD.signal": 7.121448824296371
-    },
-    "tech_4h": {
-      "RSI": 69.46414148728529,
-      "EMA20": 1412.1279578291912,
-      "EMA50": 1390.2816142265672,
-      "MACD.macd": 22.330451621881366,
-      "MACD.signal": 12.803886505049551
-    },
-    "sector": "Basic Materials",
-    "timestamp": 1778318468.769857,
-    "fundamentals": {
-      "trailingPE": 61.346634,
-      "forwardPE": 49.79095,
-      "debtToEquity": 3.776,
-      "returnOnEquity": 0.23523001
     }
   },
   {
@@ -261,12 +234,39 @@
       "MACD.signal": 31.388649186022274
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318468.8254821,
+    "timestamp": 1778332887.3118181,
     "fundamentals": {
       "trailingPE": 42.36877,
       "forwardPE": 30.953884,
       "debtToEquity": 16.137,
       "returnOnEquity": 0.17698
+    }
+  },
+  {
+    "ticker": "PIDILITIND",
+    "price": 1476,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 66.96134810766294,
+      "EMA20": 1393.4205274984006,
+      "EMA50": 1393.8341369389748,
+      "MACD.macd": 17.04060975149696,
+      "MACD.signal": 7.121448824296371
+    },
+    "tech_4h": {
+      "RSI": 69.46414148728529,
+      "EMA20": 1412.1279578291912,
+      "EMA50": 1390.2816142265672,
+      "MACD.macd": 22.330451621881366,
+      "MACD.signal": 12.803886505049551
+    },
+    "sector": "Basic Materials",
+    "timestamp": 1778332887.346989,
+    "fundamentals": {
+      "trailingPE": 61.346634,
+      "forwardPE": 49.79095,
+      "debtToEquity": 3.776,
+      "returnOnEquity": 0.23523001
     }
   },
   {
@@ -288,7 +288,7 @@
       "MACD.signal": 53.2889346635841
     },
     "sector": "Healthcare",
-    "timestamp": 1778318468.9751976,
+    "timestamp": 1778332887.448583,
     "fundamentals": {
       "trailingPE": 64.51793,
       "forwardPE": 48.660637,
@@ -315,7 +315,7 @@
       "MACD.signal": 25.19252303575649
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318468.9934144,
+    "timestamp": 1778332887.44976,
     "fundamentals": {
       "trailingPE": 88.50979,
       "forwardPE": 40.93594,
@@ -342,7 +342,7 @@
       "MACD.signal": 9.47169722093586
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318468.9946353,
+    "timestamp": 1778332887.464068,
     "fundamentals": {
       "trailingPE": null,
       "forwardPE": -345.98355,
@@ -369,7 +369,7 @@
       "MACD.signal": 25.496026216363674
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318469.0232255,
+    "timestamp": 1778332887.513545,
     "fundamentals": {
       "trailingPE": 64.93256,
       "forwardPE": 51.902206,
@@ -396,39 +396,12 @@
       "MACD.signal": -3.1490314120899328
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.0693712,
+    "timestamp": 1778332887.5208545,
     "fundamentals": {
       "trailingPE": 18.93911,
       "forwardPE": 14.51705,
       "debtToEquity": 274.993,
       "returnOnEquity": 0.16382
-    }
-  },
-  {
-    "ticker": "POLYCAB",
-    "price": 9083,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 75.40256362288059,
-      "EMA20": 8186.146476280283,
-      "EMA50": 7869.783734446222,
-      "MACD.macd": 315.57827779752006,
-      "MACD.signal": 219.13815046599677
-    },
-    "tech_4h": {
-      "RSI": 77.75628056912545,
-      "EMA20": 8465.549763852365,
-      "EMA50": 8094.18323039386,
-      "MACD.macd": 288.7294607484928,
-      "MACD.signal": 210.60779037983565
-    },
-    "sector": "Industrials",
-    "timestamp": 1778318469.2242808,
-    "fundamentals": {
-      "trailingPE": 51.28162,
-      "forwardPE": 36.77283,
-      "debtToEquity": 1.942,
-      "returnOnEquity": 0.24585
     }
   },
   {
@@ -450,7 +423,7 @@
       "MACD.signal": 0.5412448488575617
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.2372499,
+    "timestamp": 1778332887.5888574,
     "fundamentals": {
       "trailingPE": 20.482143,
       "forwardPE": 13.035202,
@@ -459,30 +432,30 @@
     }
   },
   {
-    "ticker": "BANKBARODA",
-    "price": 263.9,
-    "is_double_confirmed": true,
+    "ticker": "POLYCAB",
+    "price": 9083,
+    "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 41.19769907498538,
-      "EMA20": 270.9056447083152,
-      "EMA50": 277.1735980017936,
-      "MACD.macd": -3.1157243417869154,
-      "MACD.signal": -2.746948979986045
+      "RSI": 75.40256362288059,
+      "EMA20": 8186.146476280283,
+      "EMA50": 7869.783734446222,
+      "MACD.macd": 315.57827779752006,
+      "MACD.signal": 219.13815046599677
     },
     "tech_4h": {
-      "RSI": 40.54000501169528,
-      "EMA20": 268.76387170534963,
-      "EMA50": 272.0735877976945,
-      "MACD.macd": -1.9955613771779213,
-      "MACD.signal": -2.011212945506502
+      "RSI": 77.75628056912545,
+      "EMA20": 8465.549763852365,
+      "EMA50": 8094.18323039386,
+      "MACD.macd": 288.7294607484928,
+      "MACD.signal": 210.60779037983565
     },
-    "sector": "Financial Services",
-    "timestamp": 1778318469.2670658,
+    "sector": "Industrials",
+    "timestamp": 1778332887.594436,
     "fundamentals": {
-      "trailingPE": 6.877769,
-      "forwardPE": 6.8451962,
-      "debtToEquity": null,
-      "returnOnEquity": 0.12738
+      "trailingPE": 51.28162,
+      "forwardPE": 36.77283,
+      "debtToEquity": 1.942,
+      "returnOnEquity": 0.24585
     }
   },
   {
@@ -504,12 +477,39 @@
       "MACD.signal": 28.02056059381041
     },
     "sector": "Industrials",
-    "timestamp": 1778318469.3065393,
+    "timestamp": 1778332887.6431537,
     "fundamentals": {
       "trailingPE": 76.9191,
       "forwardPE": 30.963047,
       "debtToEquity": 32.542,
       "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "BANKBARODA",
+    "price": 263.9,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 41.19769907498538,
+      "EMA20": 270.9056447083152,
+      "EMA50": 277.1735980017936,
+      "MACD.macd": -3.1157243417869154,
+      "MACD.signal": -2.746948979986045
+    },
+    "tech_4h": {
+      "RSI": 40.54000501169528,
+      "EMA20": 268.76387170534963,
+      "EMA50": 272.0735877976945,
+      "MACD.macd": -1.9955613771779213,
+      "MACD.signal": -2.011212945506502
+    },
+    "sector": "Financial Services",
+    "timestamp": 1778332887.69493,
+    "fundamentals": {
+      "trailingPE": 6.877769,
+      "forwardPE": 6.8451962,
+      "debtToEquity": null,
+      "returnOnEquity": 0.12738
     }
   },
   {
@@ -531,12 +531,12 @@
       "MACD.signal": 10.669108130852905
     },
     "sector": "Consumer Defensive",
-    "timestamp": 1778318469.3802757,
+    "timestamp": 1778332887.7060895,
     "fundamentals": {
       "trailingPE": 75.73728,
       "forwardPE": 57.794518,
-      "debtToEquity": 11.869,
-      "returnOnEquity": null
+      "debtToEquity": 12.159,
+      "returnOnEquity": 0.0694
     }
   },
   {
@@ -558,7 +558,7 @@
       "MACD.signal": 6.323042389895326
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.475747,
+    "timestamp": 1778332887.7317147,
     "fundamentals": {
       "trailingPE": 33.096447,
       "forwardPE": 18.867334,
@@ -585,7 +585,7 @@
       "MACD.signal": 19.004551620438413
     },
     "sector": "Industrials",
-    "timestamp": 1778318469.4911888,
+    "timestamp": 1778332887.734759,
     "fundamentals": {
       "trailingPE": 113.59557,
       "forwardPE": 63.642593,
@@ -612,65 +612,11 @@
       "MACD.signal": 0.7911674079228126
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.5200663,
+    "timestamp": 1778332887.8180153,
     "fundamentals": {
       "trailingPE": 93.40579,
       "forwardPE": 18.309658,
       "debtToEquity": null,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "DALBHARAT",
-    "price": 1823.6,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 38.3103254161565,
-      "EMA20": 1936.7447356212647,
-      "EMA50": 1950.2724284262563,
-      "MACD.macd": 1.5085748056103512,
-      "MACD.signal": 9.347916575264497
-    },
-    "tech_4h": {
-      "RSI": 35.25090997991478,
-      "EMA20": 1939.615383620318,
-      "EMA50": 1937.0360352236712,
-      "MACD.macd": -10.338456164471381,
-      "MACD.signal": 2.597596104773644
-    },
-    "sector": "Basic Materials",
-    "timestamp": 1778318469.54975,
-    "fundamentals": {
-      "trailingPE": 30.027992,
-      "forwardPE": 23.704063,
-      "debtToEquity": 40.865,
-      "returnOnEquity": 0.06501
-    }
-  },
-  {
-    "ticker": "RADICO",
-    "price": 3477.2,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 69.8435992036296,
-      "EMA20": 3227.0067920856163,
-      "EMA50": 3034.452460679228,
-      "MACD.macd": 163.75754346050417,
-      "MACD.signal": 155.6664012002139
-    },
-    "tech_4h": {
-      "RSI": 63.55550509652234,
-      "EMA20": 3358.543265830016,
-      "EMA50": 3173.335841639477,
-      "MACD.macd": 90.74325208010805,
-      "MACD.signal": 97.39225233522052
-    },
-    "sector": "Consumer Defensive",
-    "timestamp": 1778318469.629227,
-    "fundamentals": {
-      "trailingPE": 76.9292,
-      "forwardPE": 49.43797,
-      "debtToEquity": 20.939,
       "returnOnEquity": null
     }
   },
@@ -693,12 +639,66 @@
       "MACD.signal": 44.403548716464805
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.7211678,
+    "timestamp": 1778332887.868241,
     "fundamentals": {
       "trailingPE": 42.917294,
       "forwardPE": 32.519657,
       "debtToEquity": null,
       "returnOnEquity": 0.32929
+    }
+  },
+  {
+    "ticker": "RADICO",
+    "price": 3477.2,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 69.8435992036296,
+      "EMA20": 3227.0067920856163,
+      "EMA50": 3034.452460679228,
+      "MACD.macd": 163.75754346050417,
+      "MACD.signal": 155.6664012002139
+    },
+    "tech_4h": {
+      "RSI": 63.55550509652234,
+      "EMA20": 3358.543265830016,
+      "EMA50": 3173.335841639477,
+      "MACD.macd": 90.74325208010805,
+      "MACD.signal": 97.39225233522052
+    },
+    "sector": "Consumer Defensive",
+    "timestamp": 1778332887.8925817,
+    "fundamentals": {
+      "trailingPE": 76.9292,
+      "forwardPE": 49.43797,
+      "debtToEquity": 20.939,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "DALBHARAT",
+    "price": 1823.6,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 38.3103254161565,
+      "EMA20": 1936.7447356212647,
+      "EMA50": 1950.2724284262563,
+      "MACD.macd": 1.5085748056103512,
+      "MACD.signal": 9.347916575264497
+    },
+    "tech_4h": {
+      "RSI": 35.25090997991478,
+      "EMA20": 1939.615383620318,
+      "EMA50": 1937.0360352236712,
+      "MACD.macd": -10.338456164471381,
+      "MACD.signal": 2.597596104773644
+    },
+    "sector": "Basic Materials",
+    "timestamp": 1778332887.9027405,
+    "fundamentals": {
+      "trailingPE": 30.027992,
+      "forwardPE": 23.704063,
+      "debtToEquity": 40.865,
+      "returnOnEquity": 0.06501
     }
   },
   {
@@ -720,7 +720,7 @@
       "MACD.signal": 3.953892442114232
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318469.7311964,
+    "timestamp": 1778332887.9365103,
     "fundamentals": {
       "trailingPE": 83.33822,
       "forwardPE": 29.040817,
@@ -747,7 +747,7 @@
       "MACD.signal": -0.7247636784895235
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.7635121,
+    "timestamp": 1778332887.979821,
     "fundamentals": {
       "trailingPE": 6.7025,
       "forwardPE": 6.455718,
@@ -774,7 +774,7 @@
       "MACD.signal": 81.7283796577911
     },
     "sector": "Industrials",
-    "timestamp": 1778318469.8043694,
+    "timestamp": 1778332888.031759,
     "fundamentals": {
       "trailingPE": 66.66255,
       "forwardPE": 54.319622,
@@ -801,7 +801,7 @@
       "MACD.signal": 9.696653837709048
     },
     "sector": "Industrials",
-    "timestamp": 1778318469.878547,
+    "timestamp": 1778332888.0618863,
     "fundamentals": {
       "trailingPE": 44.640736,
       "forwardPE": 16.518349,
@@ -828,7 +828,7 @@
       "MACD.signal": 8.261563724977641
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318469.969298,
+    "timestamp": 1778332888.07355,
     "fundamentals": {
       "trailingPE": 40.963688,
       "forwardPE": 30.308008,
@@ -855,7 +855,7 @@
       "MACD.signal": 10.227294021174087
     },
     "sector": "Financial Services",
-    "timestamp": 1778318469.970138,
+    "timestamp": 1778332888.079422,
     "fundamentals": {
       "trailingPE": 30.02859,
       "forwardPE": 17.32265,
@@ -882,7 +882,7 @@
       "MACD.signal": 1.1934677292140334
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318470.0184405,
+    "timestamp": 1778332888.146993,
     "fundamentals": {
       "trailingPE": 40.87616,
       "forwardPE": 26.37572,
@@ -909,7 +909,7 @@
       "MACD.signal": 38.72604494477679
     },
     "sector": "Industrials",
-    "timestamp": 1778318470.0533323,
+    "timestamp": 1778332888.1906023,
     "fundamentals": {
       "trailingPE": 25.641432,
       "forwardPE": 20.97978,
@@ -936,39 +936,12 @@
       "MACD.signal": 35.91681345193986
     },
     "sector": "Financial Services",
-    "timestamp": 1778318470.1293714,
+    "timestamp": 1778332888.2354574,
     "fundamentals": {
       "trailingPE": 12.422586,
       "forwardPE": 10.491071,
       "debtToEquity": 277.418,
       "returnOnEquity": 0.127
-    }
-  },
-  {
-    "ticker": "PIRAMALFIN",
-    "price": 2017.6,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 64.89306655810336,
-      "EMA20": 1876.1015185681372,
-      "EMA50": 1814.5174781676812,
-      "MACD.macd": 53.53020147861639,
-      "MACD.signal": 39.071944769242464
-    },
-    "tech_4h": {
-      "RSI": 64.67221142904899,
-      "EMA20": 1923.3917364259796,
-      "EMA50": 1858.0209870566646,
-      "MACD.macd": 43.805381655925885,
-      "MACD.signal": 43.73558335003619
-    },
-    "sector": "Financial Services",
-    "timestamp": 1778318470.2104163,
-    "fundamentals": {
-      "trailingPE": 30.486551,
-      "forwardPE": 14.067239,
-      "debtToEquity": 283.736,
-      "returnOnEquity": 0.06717
     }
   },
   {
@@ -990,12 +963,39 @@
       "MACD.signal": 310.5998016286748
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318470.2145832,
+    "timestamp": 1778332888.2561183,
     "fundamentals": {
       "trailingPE": 100.0,
       "forwardPE": 69.028336,
       "debtToEquity": 16.425,
       "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "PIRAMALFIN",
+    "price": 2017.6,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 64.89306655810336,
+      "EMA20": 1876.1015185681372,
+      "EMA50": 1814.5174781676812,
+      "MACD.macd": 53.53020147861639,
+      "MACD.signal": 39.071944769242464
+    },
+    "tech_4h": {
+      "RSI": 64.67221142904899,
+      "EMA20": 1923.3917364259796,
+      "EMA50": 1858.0209870566646,
+      "MACD.macd": 43.805381655925885,
+      "MACD.signal": 43.73558335003619
+    },
+    "sector": "Financial Services",
+    "timestamp": 1778332888.2606392,
+    "fundamentals": {
+      "trailingPE": 30.486551,
+      "forwardPE": 14.067239,
+      "debtToEquity": 283.736,
+      "returnOnEquity": 0.06717
     }
   },
   {
@@ -1017,7 +1017,7 @@
       "MACD.signal": 5.542530166778954
     },
     "sector": "Financial Services",
-    "timestamp": 1778318470.2663887,
+    "timestamp": 1778332888.3142838,
     "fundamentals": {
       "trailingPE": 24.392757,
       "forwardPE": 18.097414,
@@ -1044,38 +1044,11 @@
       "MACD.signal": 16.93208700855511
     },
     "sector": "Healthcare",
-    "timestamp": 1778318470.3561792,
+    "timestamp": 1778332888.3872283,
     "fundamentals": {
       "trailingPE": 74.635574,
       "forwardPE": 50.159298,
       "debtToEquity": 32.958,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "JBMA",
-    "price": 649.9,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 63.87626887919003,
-      "EMA20": 617.5995704365331,
-      "EMA50": 595.8986630377549,
-      "MACD.macd": 15.668097629838599,
-      "MACD.signal": 17.079988984914724
-    },
-    "tech_4h": {
-      "RSI": 62.61267976561606,
-      "EMA20": 629.1026596404635,
-      "EMA50": 612.111373619381,
-      "MACD.macd": 6.541057695839754,
-      "MACD.signal": 5.781088047369328
-    },
-    "sector": "Consumer Cyclical",
-    "timestamp": 1778318470.374662,
-    "fundamentals": {
-      "trailingPE": 199.96924,
-      "forwardPE": 32.79011,
-      "debtToEquity": 218.256,
       "returnOnEquity": null
     }
   },
@@ -1098,11 +1071,38 @@
       "MACD.signal": 0.9468883674637253
     },
     "sector": "Industrials",
-    "timestamp": 1778318470.4516943,
+    "timestamp": 1778332888.4146256,
     "fundamentals": {
       "trailingPE": null,
       "forwardPE": 190.45113,
       "debtToEquity": null,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "JBMA",
+    "price": 649.9,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 63.87626887919003,
+      "EMA20": 617.5995704365331,
+      "EMA50": 595.8986630377549,
+      "MACD.macd": 15.668097629838599,
+      "MACD.signal": 17.079988984914724
+    },
+    "tech_4h": {
+      "RSI": 62.61267976561606,
+      "EMA20": 629.1026596404635,
+      "EMA50": 612.111373619381,
+      "MACD.macd": 6.541057695839754,
+      "MACD.signal": 5.781088047369328
+    },
+    "sector": "Consumer Cyclical",
+    "timestamp": 1778332888.419539,
+    "fundamentals": {
+      "trailingPE": 199.96924,
+      "forwardPE": 32.79011,
+      "debtToEquity": 218.256,
       "returnOnEquity": null
     }
   },
@@ -1125,7 +1125,7 @@
       "MACD.signal": 8.02060121560906
     },
     "sector": "Financial Services",
-    "timestamp": 1778318470.4652245,
+    "timestamp": 1778332888.4435356,
     "fundamentals": {
       "trailingPE": 16.689209,
       "forwardPE": 11.599,
@@ -1152,11 +1152,38 @@
       "MACD.signal": 2.290783377045842
     },
     "sector": "Utilities",
-    "timestamp": 1778318470.5164804,
+    "timestamp": 1778332888.4678519,
     "fundamentals": {
       "trailingPE": 22.267443,
       "forwardPE": 15.0211735,
       "debtToEquity": 118.127,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "NATCOPHARM",
+    "price": 1174.7,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 72.5057410521772,
+      "EMA20": 1099.7763370260325,
+      "EMA50": 1037.8173609132798,
+      "MACD.macd": 35.426058136547454,
+      "MACD.signal": 31.728511964404348
+    },
+    "tech_4h": {
+      "RSI": 74.30350366429252,
+      "EMA20": 1128.861114048308,
+      "EMA50": 1088.862963488577,
+      "MACD.macd": 24.66027317983253,
+      "MACD.signal": 18.80733577032545
+    },
+    "sector": "Healthcare",
+    "timestamp": 1778332888.55737,
+    "fundamentals": {
+      "trailingPE": 13.513171,
+      "forwardPE": 29.890585,
+      "debtToEquity": 3.012,
       "returnOnEquity": null
     }
   },
@@ -1179,7 +1206,7 @@
       "MACD.signal": 1.5467517600736351
     },
     "sector": "Financial Services",
-    "timestamp": 1778318470.5991526,
+    "timestamp": 1778332888.5617068,
     "fundamentals": {
       "trailingPE": 17.00515,
       "forwardPE": 12.510616,
@@ -1206,65 +1233,11 @@
       "MACD.signal": 34.50621122250899
     },
     "sector": "Industrials",
-    "timestamp": 1778318470.6257522,
+    "timestamp": 1778332888.6263463,
     "fundamentals": {
       "trailingPE": 10.049988,
       "forwardPE": 6.958598,
       "debtToEquity": 8.236,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "NATCOPHARM",
-    "price": 1174.7,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 72.5057410521772,
-      "EMA20": 1099.7763370260325,
-      "EMA50": 1037.8173609132798,
-      "MACD.macd": 35.426058136547454,
-      "MACD.signal": 31.728511964404348
-    },
-    "tech_4h": {
-      "RSI": 74.30350366429252,
-      "EMA20": 1128.861114048308,
-      "EMA50": 1088.862963488577,
-      "MACD.macd": 24.66027317983253,
-      "MACD.signal": 18.80733577032545
-    },
-    "sector": "Healthcare",
-    "timestamp": 1778318470.6997237,
-    "fundamentals": {
-      "trailingPE": 13.513171,
-      "forwardPE": 29.890585,
-      "debtToEquity": 3.012,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "VIJAYA",
-    "price": 1278.9,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 90.31857433679909,
-      "EMA20": 1101.3029407126867,
-      "EMA50": 1033.7740357763294,
-      "MACD.macd": 68.63167677804381,
-      "MACD.signal": 50.27088429248987
-    },
-    "tech_4h": {
-      "RSI": 89.37102086369154,
-      "EMA20": 1158.0116198107214,
-      "EMA50": 1077.8763287425038,
-      "MACD.macd": 57.56193454971094,
-      "MACD.signal": 48.50233154738561
-    },
-    "sector": "Healthcare",
-    "timestamp": 1778318470.7069619,
-    "fundamentals": {
-      "trailingPE": 76.35224,
-      "forwardPE": 50.37243,
-      "debtToEquity": 42.224,
       "returnOnEquity": null
     }
   },
@@ -1287,7 +1260,7 @@
       "MACD.signal": -3.7488683922984887
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318470.7594953,
+    "timestamp": 1778332888.6621058,
     "fundamentals": {
       "trailingPE": 87.7351,
       "forwardPE": 46.87827,
@@ -1296,29 +1269,29 @@
     }
   },
   {
-    "ticker": "GRASIM",
-    "price": 2968.6,
-    "is_double_confirmed": false,
+    "ticker": "VIJAYA",
+    "price": 1278.9,
+    "is_double_confirmed": true,
     "tech_1d": {
-      "RSI": 72.5523234277502,
-      "EMA20": 2810.919794895718,
-      "EMA50": 2769.171007491648,
-      "MACD.macd": 60.0376956118439,
-      "MACD.signal": 37.411571849481405
+      "RSI": 90.31857433679909,
+      "EMA20": 1101.3029407126867,
+      "EMA50": 1033.7740357763294,
+      "MACD.macd": 68.63167677804381,
+      "MACD.signal": 50.27088429248987
     },
     "tech_4h": {
-      "RSI": 72.39118842869412,
-      "EMA20": 2863.401018147739,
-      "EMA50": 2793.5448419382624,
-      "MACD.macd": 56.80728682531617,
-      "MACD.signal": 45.01466057268918
+      "RSI": 89.37102086369154,
+      "EMA20": 1158.0116198107214,
+      "EMA50": 1077.8763287425038,
+      "MACD.macd": 57.56193454971094,
+      "MACD.signal": 48.50233154738561
     },
-    "sector": "Basic Materials",
-    "timestamp": 1778318470.8317552,
+    "sector": "Healthcare",
+    "timestamp": 1778332888.6764412,
     "fundamentals": {
-      "trailingPE": 44.446774,
-      "forwardPE": 26.349173,
-      "debtToEquity": 126.634,
+      "trailingPE": 76.35224,
+      "forwardPE": 50.37243,
+      "debtToEquity": 42.224,
       "returnOnEquity": null
     }
   },
@@ -1341,12 +1314,39 @@
       "MACD.signal": 40.965488494176846
     },
     "sector": "Healthcare",
-    "timestamp": 1778318470.8694508,
+    "timestamp": 1778332888.7313216,
     "fundamentals": {
       "trailingPE": 52.077023,
       "forwardPE": 40.047405,
       "debtToEquity": 7.831,
       "returnOnEquity": 0.21475
+    }
+  },
+  {
+    "ticker": "GRASIM",
+    "price": 2968.6,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 72.5523234277502,
+      "EMA20": 2810.919794895718,
+      "EMA50": 2769.171007491648,
+      "MACD.macd": 60.0376956118439,
+      "MACD.signal": 37.411571849481405
+    },
+    "tech_4h": {
+      "RSI": 72.39118842869412,
+      "EMA20": 2863.401018147739,
+      "EMA50": 2793.5448419382624,
+      "MACD.macd": 56.80728682531617,
+      "MACD.signal": 45.01466057268918
+    },
+    "sector": "Basic Materials",
+    "timestamp": 1778332888.7346413,
+    "fundamentals": {
+      "trailingPE": 44.446774,
+      "forwardPE": 26.349173,
+      "debtToEquity": 126.634,
+      "returnOnEquity": null
     }
   },
   {
@@ -1368,39 +1368,12 @@
       "MACD.signal": 31.410039294778556
     },
     "sector": "Real Estate",
-    "timestamp": 1778318470.9460702,
+    "timestamp": 1778332888.782808,
     "fundamentals": {
       "trailingPE": 67.11042,
       "forwardPE": 36.940323,
       "debtToEquity": 89.294,
       "returnOnEquity": 0.06322
-    }
-  },
-  {
-    "ticker": "DELHIVERY",
-    "price": 479.1,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 63.23469728839793,
-      "EMA20": 462.00782689024646,
-      "EMA50": 447.221115137929,
-      "MACD.macd": 9.519923194698322,
-      "MACD.signal": 9.015121445516233
-    },
-    "tech_4h": {
-      "RSI": 59.99913384721524,
-      "EMA20": 468.29537353300964,
-      "EMA50": 458.1182400733862,
-      "MACD.macd": 5.625057627081617,
-      "MACD.signal": 4.1792028206729155
-    },
-    "sector": "Industrials",
-    "timestamp": 1778318470.958511,
-    "fundamentals": {
-      "trailingPE": 238.35822,
-      "forwardPE": 57.78548,
-      "debtToEquity": 17.226,
-      "returnOnEquity": null
     }
   },
   {
@@ -1422,7 +1395,7 @@
       "MACD.signal": 13.996806836108052
     },
     "sector": "Industrials",
-    "timestamp": 1778318471.0018795,
+    "timestamp": 1778332888.8212388,
     "fundamentals": {
       "trailingPE": 55.566917,
       "forwardPE": 43.237576,
@@ -1449,11 +1422,38 @@
       "MACD.signal": -5.9578183657227095
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318471.0745912,
+    "timestamp": 1778332888.8668861,
     "fundamentals": {
       "trailingPE": 60.9769,
       "forwardPE": 40.022663,
       "debtToEquity": 346.085,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "DELHIVERY",
+    "price": 479.1,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 63.23469728839793,
+      "EMA20": 462.00782689024646,
+      "EMA50": 447.221115137929,
+      "MACD.macd": 9.519923194698322,
+      "MACD.signal": 9.015121445516233
+    },
+    "tech_4h": {
+      "RSI": 59.99913384721524,
+      "EMA20": 468.29537353300964,
+      "EMA50": 458.1182400733862,
+      "MACD.macd": 5.625057627081617,
+      "MACD.signal": 4.1792028206729155
+    },
+    "sector": "Industrials",
+    "timestamp": 1778332888.8790631,
+    "fundamentals": {
+      "trailingPE": 238.35822,
+      "forwardPE": 57.78548,
+      "debtToEquity": 17.226,
       "returnOnEquity": null
     }
   },
@@ -1476,7 +1476,7 @@
       "MACD.signal": 14.463535589552787
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318471.1637437,
+    "timestamp": 1778332888.914357,
     "fundamentals": {
       "trailingPE": 26.044971,
       "forwardPE": 17.541796,
@@ -1503,7 +1503,7 @@
       "MACD.signal": 7.222353849749233
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318471.184773,
+    "timestamp": 1778332888.966111,
     "fundamentals": {
       "trailingPE": 59.87303,
       "forwardPE": 44.56169,
@@ -1530,7 +1530,7 @@
       "MACD.signal": 8.086855052745268
     },
     "sector": "Utilities",
-    "timestamp": 1778318471.2119708,
+    "timestamp": 1778332888.9770856,
     "fundamentals": {
       "trailingPE": 17.09375,
       "forwardPE": 14.085838,
@@ -1557,7 +1557,7 @@
       "MACD.signal": 16.223274521536364
     },
     "sector": "Industrials",
-    "timestamp": 1778318471.252036,
+    "timestamp": 1778332889.0283384,
     "fundamentals": {
       "trailingPE": 25.316599,
       "forwardPE": 21.540583,
@@ -1584,7 +1584,7 @@
       "MACD.signal": -9.54456926428788
     },
     "sector": "Technology",
-    "timestamp": 1778318471.3201933,
+    "timestamp": 1778332889.05693,
     "fundamentals": {
       "trailingPE": 45.65521,
       "forwardPE": 31.963036,
@@ -1611,7 +1611,7 @@
       "MACD.signal": 224.08397040226282
     },
     "sector": "Consumer Cyclical",
-    "timestamp": 1778318471.4102552,
+    "timestamp": 1778332889.0882185,
     "fundamentals": {
       "trailingPE": 40.816437,
       "forwardPE": 43.22309,
@@ -1638,7 +1638,7 @@
       "MACD.signal": 7.327778916959173
     },
     "sector": "Financial Services",
-    "timestamp": 1778318471.4308693,
+    "timestamp": 1778332889.092896,
     "fundamentals": {
       "trailingPE": 399.9294,
       "forwardPE": 123.349724,
@@ -1665,7 +1665,7 @@
       "MACD.signal": -13.328683761649716
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318471.4565043,
+    "timestamp": 1778332889.1389456,
     "fundamentals": {
       "trailingPE": 29.069523,
       "forwardPE": 20.563808,
@@ -1692,11 +1692,38 @@
       "MACD.signal": 11.003050594395173
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318471.4945614,
+    "timestamp": 1778332889.1679897,
     "fundamentals": {
       "trailingPE": 42.019073,
       "forwardPE": 21.147167,
       "debtToEquity": 118.74,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "OBEROIRLTY",
+    "price": 1703,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 59.7359724204588,
+      "EMA20": 1666.3791667540563,
+      "EMA50": 1614.7028763072547,
+      "MACD.macd": 32.545932914013974,
+      "MACD.signal": 41.42038498470505
+    },
+    "tech_4h": {
+      "RSI": 58.44821273931041,
+      "EMA20": 1685.9356270907429,
+      "EMA50": 1653.8370754139057,
+      "MACD.macd": 3.7368540718555323,
+      "MACD.signal": 6.004012414210864
+    },
+    "sector": "Real Estate",
+    "timestamp": 1778332889.2223377,
+    "fundamentals": {
+      "trailingPE": 24.691895,
+      "forwardPE": 19.04207,
+      "debtToEquity": 18.083,
       "returnOnEquity": null
     }
   },
@@ -1719,7 +1746,7 @@
       "MACD.signal": 6.742286607397535
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318471.5650964,
+    "timestamp": 1778332889.2416713,
     "fundamentals": {
       "trailingPE": 57.115173,
       "forwardPE": 46.643143,
@@ -1746,39 +1773,12 @@
       "MACD.signal": 11.925206073758792
     },
     "sector": "Financial Services",
-    "timestamp": 1778318471.6536913,
+    "timestamp": 1778332889.2570245,
     "fundamentals": {
       "trailingPE": 38.317917,
       "forwardPE": 26.872898,
       "debtToEquity": 161.977,
       "returnOnEquity": 0.14392
-    }
-  },
-  {
-    "ticker": "OBEROIRLTY",
-    "price": 1703,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 59.7359724204588,
-      "EMA20": 1666.3791667540563,
-      "EMA50": 1614.7028763072547,
-      "MACD.macd": 32.545932914013974,
-      "MACD.signal": 41.42038498470505
-    },
-    "tech_4h": {
-      "RSI": 58.44821273931041,
-      "EMA20": 1685.9356270907429,
-      "EMA50": 1653.8370754139057,
-      "MACD.macd": 3.7368540718555323,
-      "MACD.signal": 6.004012414210864
-    },
-    "sector": "Real Estate",
-    "timestamp": 1778318471.678284,
-    "fundamentals": {
-      "trailingPE": 24.691895,
-      "forwardPE": 19.04207,
-      "debtToEquity": 18.083,
-      "returnOnEquity": null
     }
   },
   {
@@ -1800,7 +1800,7 @@
       "MACD.signal": -0.6464518241746589
     },
     "sector": "Financial Services",
-    "timestamp": 1778318471.7037685,
+    "timestamp": 1778332889.2879813,
     "fundamentals": {
       "trailingPE": 9.569912,
       "forwardPE": 8.015088,
@@ -1827,65 +1827,11 @@
       "MACD.signal": 15.311815194803597
     },
     "sector": "Industrials",
-    "timestamp": 1778318471.7484922,
+    "timestamp": 1778332889.3117917,
     "fundamentals": {
-      "trailingPE": 23.080952,
+      "trailingPE": 23.095615,
       "forwardPE": null,
       "debtToEquity": 15.987,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "WELSPUNLIV",
-    "price": 133.8,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 62.76090932272803,
-      "EMA20": 128.76743954149384,
-      "EMA50": 126.29893352100095,
-      "MACD.macd": 2.9374595207122525,
-      "MACD.signal": 2.756549727996326
-    },
-    "tech_4h": {
-      "RSI": 60.5344933718248,
-      "EMA20": 131.15720937951724,
-      "EMA50": 127.81781552854547,
-      "MACD.macd": 1.6700125679429902,
-      "MACD.signal": 1.5949975103105867
-    },
-    "sector": "Consumer Cyclical",
-    "timestamp": 1778318471.8047264,
-    "fundamentals": {
-      "trailingPE": 54.612244,
-      "forwardPE": 18.936928,
-      "debtToEquity": 54.975,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "APTUS",
-    "price": 282.8,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 75.52205830868817,
-      "EMA20": 254.2082267708398,
-      "EMA50": 245.3793571636041,
-      "MACD.macd": 12.609574142690462,
-      "MACD.signal": 10.231597570103668
-    },
-    "tech_4h": {
-      "RSI": 75.4765834281324,
-      "EMA20": 265.13408900842,
-      "EMA50": 250.63802244054136,
-      "MACD.macd": 9.05628167045802,
-      "MACD.signal": 8.04150589670284
-    },
-    "sector": "Financial Services",
-    "timestamp": 1778318471.8921144,
-    "fundamentals": {
-      "trailingPE": 15.018587,
-      "forwardPE": 10.922178,
-      "debtToEquity": 157.024,
       "returnOnEquity": null
     }
   },
@@ -1908,12 +1854,66 @@
       "MACD.signal": 7.857064684059716
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318471.9228427,
+    "timestamp": 1778332889.3916826,
     "fundamentals": {
       "trailingPE": 32.997208,
       "forwardPE": 20.648472,
       "debtToEquity": 6.922,
       "returnOnEquity": 0.16228001
+    }
+  },
+  {
+    "ticker": "APTUS",
+    "price": 282.8,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 75.52205830868817,
+      "EMA20": 254.2082267708398,
+      "EMA50": 245.3793571636041,
+      "MACD.macd": 12.609574142690462,
+      "MACD.signal": 10.231597570103668
+    },
+    "tech_4h": {
+      "RSI": 75.4765834281324,
+      "EMA20": 265.13408900842,
+      "EMA50": 250.63802244054136,
+      "MACD.macd": 9.05628167045802,
+      "MACD.signal": 8.04150589670284
+    },
+    "sector": "Financial Services",
+    "timestamp": 1778332889.4220502,
+    "fundamentals": {
+      "trailingPE": 15.018587,
+      "forwardPE": 10.922178,
+      "debtToEquity": 157.024,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "WELSPUNLIV",
+    "price": 133.8,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 62.76090932272803,
+      "EMA20": 128.76743954149384,
+      "EMA50": 126.29893352100095,
+      "MACD.macd": 2.9374595207122525,
+      "MACD.signal": 2.756549727996326
+    },
+    "tech_4h": {
+      "RSI": 60.5344933718248,
+      "EMA20": 131.15720937951724,
+      "EMA50": 127.81781552854547,
+      "MACD.macd": 1.6700125679429902,
+      "MACD.signal": 1.5949975103105867
+    },
+    "sector": "Consumer Cyclical",
+    "timestamp": 1778332889.4230611,
+    "fundamentals": {
+      "trailingPE": 54.612244,
+      "forwardPE": 18.936928,
+      "debtToEquity": 54.975,
+      "returnOnEquity": null
     }
   },
   {
@@ -1935,7 +1935,7 @@
       "MACD.signal": 8.684310299635305
     },
     "sector": "Industrials",
-    "timestamp": 1778318471.9487088,
+    "timestamp": 1778332889.4527614,
     "fundamentals": {
       "trailingPE": 31.849314,
       "forwardPE": 24.872093,
@@ -1962,7 +1962,7 @@
       "MACD.signal": 36.438333454448696
     },
     "sector": "Consumer Defensive",
-    "timestamp": 1778318471.99264,
+    "timestamp": 1778332889.4950275,
     "fundamentals": {
       "trailingPE": 45.04715,
       "forwardPE": 41.01734,
@@ -1989,39 +1989,12 @@
       "MACD.signal": 23.989673263737238
     },
     "sector": "Healthcare",
-    "timestamp": 1778318472.0505333,
+    "timestamp": 1778332889.5738118,
     "fundamentals": {
       "trailingPE": 70.42929,
       "forwardPE": 55.66866,
       "debtToEquity": 18.397,
       "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "JINDALSAW",
-    "price": 243.96,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 64.51122669923,
-      "EMA20": 229.1609983056564,
-      "EMA50": 211.4463018297287,
-      "MACD.macd": 10.75947091831398,
-      "MACD.signal": 11.378083765225949
-    },
-    "tech_4h": {
-      "RSI": 61.65432335879884,
-      "EMA20": 237.18165549604484,
-      "EMA50": 225.66035056304418,
-      "MACD.macd": 4.362290234848132,
-      "MACD.signal": 4.417275213535481
-    },
-    "sector": "Basic Materials",
-    "timestamp": 1778318472.1380067,
-    "fundamentals": {
-      "trailingPE": 16.02891,
-      "forwardPE": 9.917073,
-      "debtToEquity": 38.19,
-      "returnOnEquity": 0.07964
     }
   },
   {
@@ -2043,12 +2016,39 @@
       "MACD.signal": 0.6205353475459885
     },
     "sector": "Financial Services",
-    "timestamp": 1778318472.1623552,
+    "timestamp": 1778332889.5946794,
     "fundamentals": {
       "trailingPE": 24.090244,
       "forwardPE": 19.79549,
       "debtToEquity": 192.253,
       "returnOnEquity": 0.13038999
+    }
+  },
+  {
+    "ticker": "JINDALSAW",
+    "price": 243.96,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 64.51122669923,
+      "EMA20": 229.1609983056564,
+      "EMA50": 211.4463018297287,
+      "MACD.macd": 10.75947091831398,
+      "MACD.signal": 11.378083765225949
+    },
+    "tech_4h": {
+      "RSI": 61.65432335879884,
+      "EMA20": 237.18165549604484,
+      "EMA50": 225.66035056304418,
+      "MACD.macd": 4.362290234848132,
+      "MACD.signal": 4.417275213535481
+    },
+    "sector": "Basic Materials",
+    "timestamp": 1778332889.601926,
+    "fundamentals": {
+      "trailingPE": 16.02891,
+      "forwardPE": 9.917073,
+      "debtToEquity": 38.19,
+      "returnOnEquity": 0.07964
     }
   },
   {
@@ -2070,7 +2070,7 @@
       "MACD.signal": 10.876811932312453
     },
     "sector": "Consumer Defensive",
-    "timestamp": 1778318472.1968498,
+    "timestamp": 1778332889.6044369,
     "fundamentals": {
       "trailingPE": 61.722336,
       "forwardPE": 49.30376,
@@ -2097,11 +2097,38 @@
       "MACD.signal": 38.851631459646875
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318472.2331538,
+    "timestamp": 1778332889.6544523,
     "fundamentals": {
       "trailingPE": 19.34275,
       "forwardPE": 15.67757,
       "debtToEquity": 62.046,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "GLAND",
+    "price": 1904.4,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 65.6911966687673,
+      "EMA20": 1783.881991461233,
+      "EMA50": 1758.5597640150224,
+      "MACD.macd": 31.761868323255612,
+      "MACD.signal": 19.579040167275405
+    },
+    "tech_4h": {
+      "RSI": 69.18515834432066,
+      "EMA20": 1813.3409214145397,
+      "EMA50": 1774.7851460042273,
+      "MACD.macd": 34.41657285737301,
+      "MACD.signal": 20.56410788336793
+    },
+    "sector": "Healthcare",
+    "timestamp": 1778332889.747308,
+    "fundamentals": {
+      "trailingPE": 37.036175,
+      "forwardPE": 26.552616,
+      "debtToEquity": 3.161,
       "returnOnEquity": null
     }
   },
@@ -2124,7 +2151,7 @@
       "MACD.signal": 2.2452722993199283
     },
     "sector": "Industrials",
-    "timestamp": 1778318472.2948132,
+    "timestamp": 1778332889.7532723,
     "fundamentals": {
       "trailingPE": 38.909466,
       "forwardPE": 38.125767,
@@ -2133,56 +2160,29 @@
     }
   },
   {
-    "ticker": "GLAND",
-    "price": 1904.4,
-    "is_double_confirmed": false,
+    "ticker": "NYKAA",
+    "price": 272.8,
+    "is_double_confirmed": true,
     "tech_1d": {
-      "RSI": 65.6911966687673,
-      "EMA20": 1783.881991461233,
-      "EMA50": 1758.5597640150224,
-      "MACD.macd": 31.761868323255612,
-      "MACD.signal": 19.579040167275405
+      "RSI": 62.02714917624886,
+      "EMA20": 264.43802529512374,
+      "EMA50": 259.21507344118913,
+      "MACD.macd": 4.797410189420248,
+      "MACD.signal": 4.317775896390729
     },
     "tech_4h": {
-      "RSI": 69.18515834432066,
-      "EMA20": 1813.3409214145397,
-      "EMA50": 1774.7851460042273,
-      "MACD.macd": 34.41657285737301,
-      "MACD.signal": 20.56410788336793
+      "RSI": 60.30494491648549,
+      "EMA20": 268.19543618668223,
+      "EMA50": 262.7737654424476,
+      "MACD.macd": 2.8564937209409322,
+      "MACD.signal": 2.8422625732354616
     },
-    "sector": "Healthcare",
-    "timestamp": 1778318472.386619,
+    "sector": "Consumer Cyclical",
+    "timestamp": 1778332889.787893,
     "fundamentals": {
-      "trailingPE": 37.036175,
-      "forwardPE": 26.552616,
-      "debtToEquity": 3.161,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "ONESOURCE",
-    "price": 1835.2,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 71.2734396579494,
-      "EMA20": 1681.5397696175555,
-      "EMA50": 1569.2636553050254,
-      "MACD.macd": 93.88223470512071,
-      "MACD.signal": 86.55293567771291
-    },
-    "tech_4h": {
-      "RSI": 66.40333005276366,
-      "EMA20": 1754.1085384377702,
-      "EMA50": 1646.2616104993356,
-      "MACD.macd": 54.99422860422078,
-      "MACD.signal": 57.75360884229916
-    },
-    "sector": "Healthcare",
-    "timestamp": 1778318472.4285665,
-    "fundamentals": {
-      "trailingPE": 997.39124,
-      "forwardPE": 48.120613,
-      "debtToEquity": 21.928,
+      "trailingPE": 556.7347,
+      "forwardPE": 175.88425,
+      "debtToEquity": 97.748,
       "returnOnEquity": null
     }
   },
@@ -2205,7 +2205,7 @@
       "MACD.signal": 66.03517178792222
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318472.4418774,
+    "timestamp": 1778332889.794067,
     "fundamentals": {
       "trailingPE": 48.075348,
       "forwardPE": 37.40368,
@@ -2214,56 +2214,29 @@
     }
   },
   {
-    "ticker": "NYKAA",
-    "price": 272.8,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 62.02714917624886,
-      "EMA20": 264.43802529512374,
-      "EMA50": 259.21507344118913,
-      "MACD.macd": 4.797410189420248,
-      "MACD.signal": 4.317775896390729
-    },
-    "tech_4h": {
-      "RSI": 60.30494491648549,
-      "EMA20": 268.19543618668223,
-      "EMA50": 262.7737654424476,
-      "MACD.macd": 2.8564937209409322,
-      "MACD.signal": 2.8422625732354616
-    },
-    "sector": "Consumer Cyclical",
-    "timestamp": 1778318472.473617,
-    "fundamentals": {
-      "trailingPE": 556.7347,
-      "forwardPE": 175.88425,
-      "debtToEquity": 97.748,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "CARBORUNIV",
-    "price": 1027.7,
+    "ticker": "ONESOURCE",
+    "price": 1835.2,
     "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 74.0184413365545,
-      "EMA20": 943.0709005431517,
-      "EMA50": 887.7067959507456,
-      "MACD.macd": 43.92610755519161,
-      "MACD.signal": 39.71796043878761
+      "RSI": 71.2734396579494,
+      "EMA20": 1681.5397696175555,
+      "EMA50": 1569.2636553050254,
+      "MACD.macd": 93.88223470512071,
+      "MACD.signal": 86.55293567771291
     },
     "tech_4h": {
-      "RSI": 70.19153656597481,
-      "EMA20": 978.466416771941,
-      "EMA50": 929.3597783661459,
-      "MACD.macd": 27.130595989493713,
-      "MACD.signal": 24.700702804580438
+      "RSI": 66.40333005276366,
+      "EMA20": 1754.1085384377702,
+      "EMA50": 1646.2616104993356,
+      "MACD.macd": 54.99422860422078,
+      "MACD.signal": 57.75360884229916
     },
-    "sector": "Industrials",
-    "timestamp": 1778318472.5356715,
+    "sector": "Healthcare",
+    "timestamp": 1778332889.8181229,
     "fundamentals": {
-      "trailingPE": 79.35907,
-      "forwardPE": 42.782253,
-      "debtToEquity": 7.95,
+      "trailingPE": 997.39124,
+      "forwardPE": 48.120613,
+      "debtToEquity": 21.928,
       "returnOnEquity": null
     }
   },
@@ -2286,39 +2259,12 @@
       "MACD.signal": -0.5364787492893287
     },
     "sector": "Financial Services",
-    "timestamp": 1778318472.6453745,
+    "timestamp": 1778332889.9253473,
     "fundamentals": {
       "trailingPE": 27.332201,
       "forwardPE": 15.451489,
       "debtToEquity": 502.058,
       "returnOnEquity": 0.12005
-    }
-  },
-  {
-    "ticker": "ANTHEM",
-    "price": 784.65,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 68.97859520709153,
-      "EMA20": 746.9757277196705,
-      "EMA50": 711.9999905771858,
-      "MACD.macd": 24.660870018364335,
-      "MACD.signal": 23.87161447020153
-    },
-    "tech_4h": {
-      "RSI": 70.20721490788306,
-      "EMA20": 765.4489805477973,
-      "EMA50": 738.4305002781264,
-      "MACD.macd": 12.589545086292219,
-      "MACD.signal": 13.04162692217772
-    },
-    "sector": "Healthcare",
-    "timestamp": 1778318472.6772294,
-    "fundamentals": {
-      "trailingPE": 91.77193,
-      "forwardPE": 63.46304,
-      "debtToEquity": 3.997,
-      "returnOnEquity": null
     }
   },
   {
@@ -2340,11 +2286,65 @@
       "MACD.signal": 0.9610906473692469
     },
     "sector": "Industrials",
-    "timestamp": 1778318472.687008,
+    "timestamp": 1778332889.9310036,
     "fundamentals": {
       "trailingPE": 38.517048,
       "forwardPE": null,
       "debtToEquity": 1.796,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "CARBORUNIV",
+    "price": 1027.7,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 74.0184413365545,
+      "EMA20": 943.0709005431517,
+      "EMA50": 887.7067959507456,
+      "MACD.macd": 43.92610755519161,
+      "MACD.signal": 39.71796043878761
+    },
+    "tech_4h": {
+      "RSI": 70.19153656597481,
+      "EMA20": 978.466416771941,
+      "EMA50": 929.3597783661459,
+      "MACD.macd": 27.130595989493713,
+      "MACD.signal": 24.700702804580438
+    },
+    "sector": "Industrials",
+    "timestamp": 1778332889.964589,
+    "fundamentals": {
+      "trailingPE": 79.35907,
+      "forwardPE": 42.782253,
+      "debtToEquity": 7.95,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "ANTHEM",
+    "price": 784.65,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 68.97859520709153,
+      "EMA20": 746.9757277196705,
+      "EMA50": 711.9999905771858,
+      "MACD.macd": 24.660870018364335,
+      "MACD.signal": 23.87161447020153
+    },
+    "tech_4h": {
+      "RSI": 70.20721490788306,
+      "EMA20": 765.4489805477973,
+      "EMA50": 738.4305002781264,
+      "MACD.macd": 12.589545086292219,
+      "MACD.signal": 13.04162692217772
+    },
+    "sector": "Healthcare",
+    "timestamp": 1778332889.9680917,
+    "fundamentals": {
+      "trailingPE": 91.77193,
+      "forwardPE": 63.46304,
+      "debtToEquity": 3.997,
       "returnOnEquity": null
     }
   },
@@ -2367,92 +2367,11 @@
       "MACD.signal": 3.9052271966476506
     },
     "sector": "Consumer Defensive",
-    "timestamp": 1778318472.7248397,
+    "timestamp": 1778332890.0185494,
     "fundamentals": {
       "trailingPE": 75.1569,
       "forwardPE": 52.710426,
       "debtToEquity": 11.184,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "SCHAEFFLER",
-    "price": 4247.9,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 56.979468655321604,
-      "EMA20": 4151.124229667159,
-      "EMA50": 4057.9841719807755,
-      "MACD.macd": 68.33797431011862,
-      "MACD.signal": 66.83626907353839
-    },
-    "tech_4h": {
-      "RSI": 54.66873486003345,
-      "EMA20": 4193.749173607029,
-      "EMA50": 4122.7584047279115,
-      "MACD.macd": 26.514310946119622,
-      "MACD.signal": 34.844607280901165
-    },
-    "sector": "Consumer Cyclical",
-    "timestamp": 1778318472.7745316,
-    "fundamentals": {
-      "trailingPE": 54.6424,
-      "forwardPE": 42.139256,
-      "debtToEquity": 0.904,
-      "returnOnEquity": 0.20212999
-    }
-  },
-  {
-    "ticker": "NIVABUPA",
-    "price": 81.29,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 65.3511684743503,
-      "EMA20": 77.74375938023634,
-      "EMA50": 76.11094481261323,
-      "MACD.macd": 1.57099575463792,
-      "MACD.signal": 1.4151765900833504
-    },
-    "tech_4h": {
-      "RSI": 64.64116303881119,
-      "EMA20": 78.85967199638712,
-      "EMA50": 77.15712579168388,
-      "MACD.macd": 0.9590439133012296,
-      "MACD.signal": 0.7813132466970616
-    },
-    "sector": "Financial Services",
-    "timestamp": 1778318472.922673,
-    "fundamentals": {
-      "trailingPE": "Infinity",
-      "forwardPE": 33.551258,
-      "debtToEquity": 7.296,
-      "returnOnEquity": 0.07958
-    }
-  },
-  {
-    "ticker": "ZYDUSWELL",
-    "price": 517.5,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 64.10833211639732,
-      "EMA20": 495.2862121713098,
-      "EMA50": 468.3999135242958,
-      "MACD.macd": 14.77316154596474,
-      "MACD.signal": 16.57310500282616
-    },
-    "tech_4h": {
-      "RSI": 59.63644364303263,
-      "EMA20": 505.08149187829116,
-      "EMA50": 489.9620843267792,
-      "MACD.macd": 5.31427643837992,
-      "MACD.signal": 5.038972675082832
-    },
-    "sector": "Consumer Defensive",
-    "timestamp": 1778318472.9297757,
-    "fundamentals": {
-      "trailingPE": 79.37116,
-      "forwardPE": 43.02257,
-      "debtToEquity": 53.314,
       "returnOnEquity": null
     }
   },
@@ -2475,11 +2394,92 @@
       "MACD.signal": 7.602951587237982
     },
     "sector": "Healthcare",
-    "timestamp": 1778318472.9630024,
+    "timestamp": 1778332890.0702372,
     "fundamentals": {
       "trailingPE": 95.2988,
       "forwardPE": 56.062016,
       "debtToEquity": 123.719,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "NIVABUPA",
+    "price": 81.29,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 65.3511684743503,
+      "EMA20": 77.74375938023634,
+      "EMA50": 76.11094481261323,
+      "MACD.macd": 1.57099575463792,
+      "MACD.signal": 1.4151765900833504
+    },
+    "tech_4h": {
+      "RSI": 64.64116303881119,
+      "EMA20": 78.85967199638712,
+      "EMA50": 77.15712579168388,
+      "MACD.macd": 0.9590439133012296,
+      "MACD.signal": 0.7813132466970616
+    },
+    "sector": "Financial Services",
+    "timestamp": 1778332890.122251,
+    "fundamentals": {
+      "trailingPE": "Infinity",
+      "forwardPE": 33.551258,
+      "debtToEquity": 7.296,
+      "returnOnEquity": 0.07958
+    }
+  },
+  {
+    "ticker": "SCHAEFFLER",
+    "price": 4247.9,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 56.979468655321604,
+      "EMA20": 4151.124229667159,
+      "EMA50": 4057.9841719807755,
+      "MACD.macd": 68.33797431011862,
+      "MACD.signal": 66.83626907353839
+    },
+    "tech_4h": {
+      "RSI": 54.66873486003345,
+      "EMA20": 4193.749173607029,
+      "EMA50": 4122.7584047279115,
+      "MACD.macd": 26.514310946119622,
+      "MACD.signal": 34.844607280901165
+    },
+    "sector": "Consumer Cyclical",
+    "timestamp": 1778332890.1351755,
+    "fundamentals": {
+      "trailingPE": 54.6424,
+      "forwardPE": 42.139256,
+      "debtToEquity": 0.904,
+      "returnOnEquity": 0.20212999
+    }
+  },
+  {
+    "ticker": "ZYDUSWELL",
+    "price": 517.5,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 64.10833211639732,
+      "EMA20": 495.2862121713098,
+      "EMA50": 468.3999135242958,
+      "MACD.macd": 14.77316154596474,
+      "MACD.signal": 16.57310500282616
+    },
+    "tech_4h": {
+      "RSI": 59.63644364303263,
+      "EMA20": 505.08149187829116,
+      "EMA50": 489.9620843267792,
+      "MACD.macd": 5.31427643837992,
+      "MACD.signal": 5.038972675082832
+    },
+    "sector": "Consumer Defensive",
+    "timestamp": 1778332890.136091,
+    "fundamentals": {
+      "trailingPE": 79.37116,
+      "forwardPE": 43.02257,
+      "debtToEquity": 53.314,
       "returnOnEquity": null
     }
   },
@@ -2502,7 +2502,7 @@
       "MACD.signal": 0.7730833325513154
     },
     "sector": "Basic Materials",
-    "timestamp": 1778318472.9751673,
+    "timestamp": 1778332890.1826694,
     "fundamentals": {
       "trailingPE": 12.50075,
       "forwardPE": 11.006596,
@@ -2529,11 +2529,38 @@
       "MACD.signal": 24.607909344646338
     },
     "sector": "Communication Services",
-    "timestamp": 1778318473.0248451,
+    "timestamp": 1778332890.2638175,
     "fundamentals": {
       "trailingPE": 499.44186,
       "forwardPE": 26.23347,
       "debtToEquity": 105.057,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "ASAHIINDIA",
+    "price": 836.1,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 46.35196346046935,
+      "EMA20": 845.0544817697873,
+      "EMA50": 862.3960775041706,
+      "MACD.macd": -2.869984612433541,
+      "MACD.signal": -2.8773217566646925
+    },
+    "tech_4h": {
+      "RSI": 46.22755377174026,
+      "EMA20": 843.5168854653134,
+      "EMA50": 846.3607991659238,
+      "MACD.macd": -2.179345751345636,
+      "MACD.signal": -1.1462840519708266
+    },
+    "sector": "Consumer Cyclical",
+    "timestamp": 1778332890.2908902,
+    "fundamentals": {
+      "trailingPE": 68.985146,
+      "forwardPE": 44.00526,
+      "debtToEquity": 77.144,
       "returnOnEquity": null
     }
   },
@@ -2556,7 +2583,7 @@
       "MACD.signal": -7.660203651713614
     },
     "sector": "Communication Services",
-    "timestamp": 1778318473.165501,
+    "timestamp": 1778332890.3041263,
     "fundamentals": {
       "trailingPE": 42.738945,
       "forwardPE": 29.746664,
@@ -2583,38 +2610,11 @@
       "MACD.signal": 4.529716777140728
     },
     "sector": "Consumer Defensive",
-    "timestamp": 1778318473.1785548,
+    "timestamp": 1778332890.3959048,
     "fundamentals": {
       "trailingPE": 22.989304,
       "forwardPE": 17.801243,
       "debtToEquity": 28.488,
-      "returnOnEquity": null
-    }
-  },
-  {
-    "ticker": "ASAHIINDIA",
-    "price": 836.1,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 46.35196346046935,
-      "EMA20": 845.0544817697873,
-      "EMA50": 862.3960775041706,
-      "MACD.macd": -2.869984612433541,
-      "MACD.signal": -2.8773217566646925
-    },
-    "tech_4h": {
-      "RSI": 46.22755377174026,
-      "EMA20": 843.5168854653134,
-      "EMA50": 846.3607991659238,
-      "MACD.macd": -2.179345751345636,
-      "MACD.signal": -1.1462840519708266
-    },
-    "sector": "Consumer Cyclical",
-    "timestamp": 1778318473.2115982,
-    "fundamentals": {
-      "trailingPE": 68.985146,
-      "forwardPE": 44.00526,
-      "debtToEquity": 77.144,
       "returnOnEquity": null
     }
   }
