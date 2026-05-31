@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "HDFCBANK",
-    "price": 744.55,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 39.0860892775714,
-      "EMA20": 769.9573169047995,
-      "EMA50": 794.4922552079988,
-      "MACD.macd": -8.162430322509294,
-      "MACD.signal": -8.42889278470475
-    },
-    "tech_4h": {
-      "RSI": 36.61705490724179,
-      "EMA20": 766.588302629666,
-      "EMA50": 774.5023614323378,
-      "MACD.macd": -3.703817548039865,
-      "MACD.signal": -1.9757735158443117
-    },
-    "sector": "Financial Services",
-    "timestamp": 1780200010.2776036,
-    "fundamentals": {
-      "trailingPE": 16.612003,
-      "forwardPE": 11.848867,
-      "debtToEquity": null,
-      "returnOnEquity": 0.13818
-    }
-  },
-  {
     "ticker": "ICICIBANK",
     "price": 1256.4,
     "is_double_confirmed": false,
@@ -45,12 +18,39 @@
       "MACD.signal": 0.30764889034569
     },
     "sector": "Financial Services",
-    "timestamp": 1780200010.3208694,
+    "timestamp": 1780213843.6708467,
     "fundamentals": {
       "trailingPE": 16.805779,
       "forwardPE": 13.828982,
       "debtToEquity": null,
       "returnOnEquity": 0.16359
+    }
+  },
+  {
+    "ticker": "HDFCBANK",
+    "price": 744.55,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 39.0860892775714,
+      "EMA20": 769.9573169047995,
+      "EMA50": 794.4922552079988,
+      "MACD.macd": -8.162430322509294,
+      "MACD.signal": -8.42889278470475
+    },
+    "tech_4h": {
+      "RSI": 36.61705490724179,
+      "EMA20": 766.588302629666,
+      "EMA50": 774.5023614323378,
+      "MACD.macd": -3.703817548039865,
+      "MACD.signal": -1.9757735158443117
+    },
+    "sector": "Financial Services",
+    "timestamp": 1780213843.6752982,
+    "fundamentals": {
+      "trailingPE": 16.612003,
+      "forwardPE": 11.848867,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13818
     }
   },
   {
@@ -72,7 +72,7 @@
       "MACD.signal": -8.5314276238626
     },
     "sector": "Energy",
-    "timestamp": 1780200010.339314,
+    "timestamp": 1780213843.6924293,
     "fundamentals": {
       "trailingPE": 22.123241,
       "forwardPE": 18.382061,
