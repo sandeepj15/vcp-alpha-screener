@@ -1,29 +1,56 @@
 [
   {
-    "ticker": "HDFCBANK",
-    "price": 736.05,
+    "ticker": "RELIANCE",
+    "price": 1314.6,
     "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 36.67661486142675,
-      "EMA20": 764.379345584201,
-      "EMA50": 790.2489829890062,
-      "MACD.macd": -10.769146449408595,
-      "MACD.signal": -9.050169866287614
+      "RSI": 38.03494722318941,
+      "EMA20": 1353.7439114389983,
+      "EMA50": 1372.2651171515101,
+      "MACD.macd": -14.780966416754381,
+      "MACD.signal": -9.499164561269929
     },
     "tech_4h": {
-      "RSI": 31.72422214228166,
-      "EMA20": 759.7098442648611,
-      "EMA50": 770.6227621363812,
-      "MACD.macd": -7.563101783216325,
-      "MACD.signal": -4.189731864211963
+      "RSI": 35.34478446864718,
+      "EMA20": 1343.0236479664277,
+      "EMA50": 1359.765332907403,
+      "MACD.macd": -13.317979531317405,
+      "MACD.signal": -10.900401207076095
+    },
+    "sector": "Energy",
+    "timestamp": 1780401945.2123637,
+    "fundamentals": {
+      "trailingPE": 22.034864,
+      "forwardPE": 18.203043,
+      "debtToEquity": 36.653,
+      "returnOnEquity": 0.09139
+    }
+  },
+  {
+    "ticker": "ICICIBANK",
+    "price": 1226.6,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 38.88953116510695,
+      "EMA20": 1261.0253986955925,
+      "EMA50": 1282.5005906248862,
+      "MACD.macd": -10.80509183146819,
+      "MACD.signal": -10.593129303705856
+    },
+    "tech_4h": {
+      "RSI": 35.099706258125025,
+      "EMA20": 1256.189601135041,
+      "EMA50": 1266.7904167815957,
+      "MACD.macd": -5.647684192966381,
+      "MACD.signal": -1.8469728771683163
     },
     "sector": "Financial Services",
-    "timestamp": 1780373252.2456625,
+    "timestamp": 1780401945.2201066,
     "fundamentals": {
-      "trailingPE": 16.45605,
-      "forwardPE": 11.708823,
+      "trailingPE": 16.409365,
+      "forwardPE": 13.48594,
       "debtToEquity": null,
-      "returnOnEquity": 0.13818
+      "returnOnEquity": 0.16359
     }
   }
 ]
