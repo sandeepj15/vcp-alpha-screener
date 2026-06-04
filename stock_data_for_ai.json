@@ -1,27 +1,81 @@
 [
   {
-    "ticker": "TCS",
-    "price": 2241.7,
-    "is_double_confirmed": false,
+    "ticker": "RELIANCE",
+    "price": 1304.7,
+    "is_double_confirmed": true,
     "tech_1d": {
-      "RSI": 40.56319985059584,
-      "EMA20": 2334.443913199391,
-      "EMA50": 2431.4130390140754,
-      "MACD.macd": -37.45251492534362,
-      "MACD.signal": -45.0160152134729
+      "RSI": 35.994232899784606,
+      "EMA20": 1345.5794830600416,
+      "EMA50": 1367.390060084881,
+      "MACD.macd": -17.660963793020983,
+      "MACD.signal": -12.190632754590675
     },
     "tech_4h": {
-      "RSI": 41.914424218867225,
-      "EMA20": 2315.2429932983337,
-      "EMA50": 2351.974959719055,
-      "MACD.macd": -8.130519612296212,
-      "MACD.signal": -10.300702153785169
+      "RSI": 32.1927799716796,
+      "EMA20": 1333.9697442394695,
+      "EMA50": 1353.9277520628743,
+      "MACD.macd": -15.583170662988096,
+      "MACD.signal": -12.947775556702355
+    },
+    "sector": "Energy",
+    "timestamp": 1780546270.5792832,
+    "fundamentals": {
+      "trailingPE": 21.837658,
+      "forwardPE": 18.146637,
+      "debtToEquity": 36.653,
+      "returnOnEquity": 0.09139
+    }
+  },
+  {
+    "ticker": "HDFCBANK",
+    "price": 745,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 40.634743518649415,
+      "EMA20": 762.5602979023679,
+      "EMA50": 787.5371864214127,
+      "MACD.macd": -9.98149962862567,
+      "MACD.signal": -9.195717284647149
+    },
+    "tech_4h": {
+      "RSI": 39.53010877655227,
+      "EMA20": 757.2332847065389,
+      "EMA50": 767.9780491515182,
+      "MACD.macd": -6.425707293197888,
+      "MACD.signal": -5.401907562125548
+    },
+    "sector": "Financial Services",
+    "timestamp": 1780546270.5914903,
+    "fundamentals": {
+      "trailingPE": 16.61463,
+      "forwardPE": 11.856029,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13818
+    }
+  },
+  {
+    "ticker": "TCS",
+    "price": 2233,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 39.98304861221531,
+      "EMA20": 2324.782588132782,
+      "EMA50": 2423.632135523327,
+      "MACD.macd": -41.172131038054886,
+      "MACD.signal": -44.2472383783893
+    },
+    "tech_4h": {
+      "RSI": 40.974195132464295,
+      "EMA20": 2307.410327269921,
+      "EMA50": 2347.309274907684,
+      "MACD.macd": -13.856284413663161,
+      "MACD.signal": -11.011818605760768
     },
     "sector": "Technology",
-    "timestamp": 1780525726.6755326,
+    "timestamp": 1780546270.5946758,
     "fundamentals": {
-      "trailingPE": 16.47703,
-      "forwardPE": 13.5506735,
+      "trailingPE": 17.89233,
+      "forwardPE": 13.480554,
       "debtToEquity": 10.389,
       "returnOnEquity": 0.48395002
     }
