@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "ticker": "RELIANCE",
+    "price": 1291.2,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 33.35347321477748,
+      "EMA20": 1340.3143168729175,
+      "EMA50": 1364.364536775132,
+      "MACD.macd": -19.806623895078474,
+      "MACD.signal": -13.726594515451799
+    },
+    "tech_4h": {
+      "RSI": 32.25831866552967,
+      "EMA20": 1323.4705590289486,
+      "EMA50": 1347.0899118924478,
+      "MACD.macd": -18.142181333374538,
+      "MACD.signal": -15.221607296506097
+    },
+    "sector": "Energy",
+    "timestamp": 1780646989.5873437,
+    "fundamentals": {
+      "trailingPE": 21.62117,
+      "forwardPE": 17.954712,
+      "debtToEquity": 36.653,
+      "returnOnEquity": 0.09139
+    }
+  },
+  {
+    "ticker": "TCS",
+    "price": 2199.9,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 37.733657901050805,
+      "EMA20": 2313.5783507142405,
+      "EMA50": 2415.1597488169145,
+      "MACD.macd": -45.764894678788096,
+      "MACD.signal": -44.448661376360754
+    },
+    "tech_4h": {
+      "RSI": 38.519159447841034,
+      "EMA20": 2282.958596107754,
+      "EMA50": 2332.2227809143174,
+      "MACD.macd": -27.749117839804512,
+      "MACD.signal": -17.170398556937418
+    },
+    "sector": "Technology",
+    "timestamp": 1780646989.6409428,
+    "fundamentals": {
+      "trailingPE": 16.172903,
+      "forwardPE": 13.298604,
+      "debtToEquity": 10.389,
+      "returnOnEquity": 0.48395002
+    }
+  },
+  {
+    "ticker": "HDFCBANK",
+    "price": 747.7,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 41.409648475090165,
+      "EMA20": 761.9377751996481,
+      "EMA50": 786.321579725917,
+      "MACD.macd": -9.404800640679014,
+      "MACD.signal": -9.12010945442902
+    },
+    "tech_4h": {
+      "RSI": 40.58172819845122,
+      "EMA20": 755.7433486862221,
+      "EMA50": 766.1503968375773,
+      "MACD.macd": -5.584637141036069,
+      "MACD.signal": -5.432807791483189
+    },
+    "sector": "Financial Services",
+    "timestamp": 1780646989.642066,
+    "fundamentals": {
+      "trailingPE": 16.689734,
+      "forwardPE": 11.898997,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13818
+    }
+  }
+]
