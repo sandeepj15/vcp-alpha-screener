@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "HDFCBANK",
+    "price": 747.05,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 41.18556793497794,
+      "EMA20": 761.8758704377433,
+      "EMA50": 786.2960895298386,
+      "MACD.macd": -9.456652492530907,
+      "MACD.signal": -9.130479824799398
+    },
+    "tech_4h": {
+      "RSI": 40.847797137027435,
+      "EMA20": 755.7814439243174,
+      "EMA50": 766.1660831120871,
+      "MACD.macd": -5.552728309127247,
+      "MACD.signal": -5.426426025101424
+    },
+    "sector": "Financial Services",
+    "timestamp": 1780717107.0465448,
+    "fundamentals": {
+      "trailingPE": 16.667782,
+      "forwardPE": 11.888652,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13818
+    }
+  },
+  {
     "ticker": "TCS",
     "price": 2198.9,
     "is_double_confirmed": false,
@@ -18,9 +45,9 @@
       "MACD.signal": -17.234216220755062
     },
     "sector": "Technology",
-    "timestamp": 1780694818.9028738,
+    "timestamp": 1780717107.0467477,
     "fundamentals": {
-      "trailingPE": 16.164816,
+      "trailingPE": 16.155315,
       "forwardPE": 13.291954,
       "debtToEquity": 10.389,
       "returnOnEquity": 0.48395002
@@ -45,39 +72,12 @@
       "MACD.signal": -15.215225530124332
     },
     "sector": "Energy",
-    "timestamp": 1780694818.9046223,
+    "timestamp": 1780717107.0841715,
     "fundamentals": {
-      "trailingPE": 21.62117,
+      "trailingPE": 21.646545,
       "forwardPE": 17.954712,
       "debtToEquity": 36.653,
       "returnOnEquity": 0.09139
-    }
-  },
-  {
-    "ticker": "HDFCBANK",
-    "price": 747.05,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 41.18556793497794,
-      "EMA20": 761.8758704377433,
-      "EMA50": 786.2960895298386,
-      "MACD.macd": -9.456652492530907,
-      "MACD.signal": -9.130479824799398
-    },
-    "tech_4h": {
-      "RSI": 40.847797137027435,
-      "EMA20": 755.7814439243174,
-      "EMA50": 766.1660831120871,
-      "MACD.macd": -5.552728309127247,
-      "MACD.signal": -5.426426025101424
-    },
-    "sector": "Financial Services",
-    "timestamp": 1780694818.9147847,
-    "fundamentals": {
-      "trailingPE": 16.675222,
-      "forwardPE": 11.888652,
-      "debtToEquity": null,
-      "returnOnEquity": 0.13818
     }
   }
 ]
