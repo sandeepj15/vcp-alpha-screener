@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "HDFCBANK",
+    "price": 747.05,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 41.18556793497794,
+      "EMA20": 761.8758704377433,
+      "EMA50": 786.2960895298386,
+      "MACD.macd": -9.456652492530907,
+      "MACD.signal": -9.130479824799398
+    },
+    "tech_4h": {
+      "RSI": 40.847797137027435,
+      "EMA20": 755.7814439243174,
+      "EMA50": 766.1660831120871,
+      "MACD.macd": -5.552728309127247,
+      "MACD.signal": -5.426426025101424
+    },
+    "sector": "Financial Services",
+    "timestamp": 1780866901.1855655,
+    "fundamentals": {
+      "trailingPE": 16.693441,
+      "forwardPE": 11.906954,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13818
+    }
+  },
+  {
     "ticker": "RELIANCE",
     "price": 1291,
     "is_double_confirmed": false,
@@ -18,10 +45,10 @@
       "MACD.signal": -15.215225530124332
     },
     "sector": "Energy",
-    "timestamp": 1780852709.7720494,
+    "timestamp": 1780866901.2231672,
     "fundamentals": {
-      "trailingPE": 21.646545,
-      "forwardPE": 17.954712,
+      "trailingPE": 21.653254,
+      "forwardPE": 17.960276,
       "debtToEquity": 36.653,
       "returnOnEquity": 0.09139
     }
@@ -45,39 +72,12 @@
       "MACD.signal": -17.234216220755062
     },
     "sector": "Technology",
-    "timestamp": 1780852709.773991,
+    "timestamp": 1780866901.2571435,
     "fundamentals": {
-      "trailingPE": 16.155315,
-      "forwardPE": 13.291954,
+      "trailingPE": 16.134008,
+      "forwardPE": 13.2744255,
       "debtToEquity": 10.389,
       "returnOnEquity": 0.48395002
-    }
-  },
-  {
-    "ticker": "HDFCBANK",
-    "price": 747.05,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 41.18556793497794,
-      "EMA20": 761.8758704377433,
-      "EMA50": 786.2960895298386,
-      "MACD.macd": -9.456652492530907,
-      "MACD.signal": -9.130479824799398
-    },
-    "tech_4h": {
-      "RSI": 40.847797137027435,
-      "EMA20": 755.7814439243174,
-      "EMA50": 766.1660831120871,
-      "MACD.macd": -5.552728309127247,
-      "MACD.signal": -5.426426025101424
-    },
-    "sector": "Financial Services",
-    "timestamp": 1780852709.7772036,
-    "fundamentals": {
-      "trailingPE": 16.667782,
-      "forwardPE": 11.888652,
-      "debtToEquity": null,
-      "returnOnEquity": 0.13818
     }
   }
 ]
