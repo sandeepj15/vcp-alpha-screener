@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "TCS",
-    "price": 2125,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 36.39141318065748,
-      "EMA20": 2222.404219962655,
-      "EMA50": 2333.586008527184,
-      "MACD.macd": -52.20699503957712,
-      "MACD.signal": -54.893640839813685
-    },
-    "tech_4h": {
-      "RSI": 42.25374481614106,
-      "EMA20": 2181.30760125606,
-      "EMA50": 2239.926006624637,
-      "MACD.macd": -25.040243919936074,
-      "MACD.signal": -25.927740151868978
-    },
-    "sector": "Technology",
-    "timestamp": 1782063611.9168282,
-    "fundamentals": {
-      "trailingPE": 15.705147,
-      "forwardPE": 12.889769,
-      "debtToEquity": 10.389,
-      "returnOnEquity": 0.48395002
-    }
-  },
-  {
     "ticker": "INFY",
     "price": 1051.4,
     "is_double_confirmed": false,
@@ -45,12 +18,39 @@
       "MACD.signal": -15.806162329355796
     },
     "sector": "Technology",
-    "timestamp": 1782063611.9195068,
+    "timestamp": 1782076531.585093,
     "fundamentals": {
       "trailingPE": 13.887497,
       "forwardPE": 12.841421,
       "debtToEquity": 9.827,
       "returnOnEquity": 0.31439
+    }
+  },
+  {
+    "ticker": "TCS",
+    "price": 2125,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 36.39141318065748,
+      "EMA20": 2222.404219962655,
+      "EMA50": 2333.586008527184,
+      "MACD.macd": -52.20699503957712,
+      "MACD.signal": -54.893640839813685
+    },
+    "tech_4h": {
+      "RSI": 42.25374481614106,
+      "EMA20": 2181.30760125606,
+      "EMA50": 2239.926006624637,
+      "MACD.macd": -25.040243919936074,
+      "MACD.signal": -25.927740151868978
+    },
+    "sector": "Technology",
+    "timestamp": 1782076531.6295233,
+    "fundamentals": {
+      "trailingPE": 15.705147,
+      "forwardPE": 12.889769,
+      "debtToEquity": 10.389,
+      "returnOnEquity": 0.48395002
     }
   }
 ]
