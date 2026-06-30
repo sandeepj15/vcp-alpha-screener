@@ -1,54 +1,81 @@
 [
   {
     "ticker": "TCS",
-    "price": 2095.4,
+    "price": 2044,
     "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 37.4374865123807,
-      "EMA20": 2165.7727319189457,
-      "EMA50": 2283.143548864144,
-      "MACD.macd": -58.248907736381625,
-      "MACD.signal": -57.608143776129
+      "RSI": 33.384948517984185,
+      "EMA20": 2160.8774938237075,
+      "EMA50": 2281.1278625896343,
+      "MACD.macd": -62.34919263666643,
+      "MACD.signal": -58.42820075618596
     },
     "tech_4h": {
-      "RSI": 42.25497411959397,
-      "EMA20": 2125.157216240971,
-      "EMA50": 2189.470184153466,
-      "MACD.macd": -30.74527687490081,
-      "MACD.signal": -31.550749516236817
+      "RSI": 36.11203912906927,
+      "EMA20": 2113.138615147727,
+      "EMA50": 2181.889423375437,
+      "MACD.macd": -36.60868855867193,
+      "MACD.signal": -33.20051396290058
     },
     "sector": "Technology",
-    "timestamp": 1782791247.3876603,
+    "timestamp": 1782806104.8060238,
     "fundamentals": {
-      "trailingPE": 15.407533,
-      "forwardPE": 12.652639,
+      "trailingPE": 15.033838,
+      "forwardPE": 12.345761,
       "debtToEquity": 10.389,
       "returnOnEquity": 0.48395002
     }
   },
   {
-    "ticker": "INFY",
-    "price": 1024.3,
-    "is_double_confirmed": true,
+    "ticker": "RELIANCE",
+    "price": 1293.4,
+    "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 33.109007245762186,
-      "EMA20": 1101.6179835502812,
-      "EMA50": 1163.857328535487,
-      "MACD.macd": -40.762255200632126,
-      "MACD.signal": -31.00839597372216
+      "RSI": 42.45636065244246,
+      "EMA20": 1312.8196457648519,
+      "EMA50": 1335.5214605193335,
+      "MACD.macd": -8.692826334456868,
+      "MACD.signal": -10.90317245725062
     },
     "tech_4h": {
-      "RSI": 31.205928787383115,
-      "EMA20": 1071.1213227538396,
-      "EMA50": 1117.96830783447,
-      "MACD.macd": -32.46284754480121,
-      "MACD.signal": -30.912606422194365
+      "RSI": 41.53340580085088,
+      "EMA20": 1309.289992155096,
+      "EMA50": 1317.7044010783557,
+      "MACD.macd": -2.706953124604979,
+      "MACD.signal": 0.22966829401342548
+    },
+    "sector": "Energy",
+    "timestamp": 1782806104.8102925,
+    "fundamentals": {
+      "trailingPE": 21.657736,
+      "forwardPE": 18.01442,
+      "debtToEquity": 36.653,
+      "returnOnEquity": 0.09139
+    }
+  },
+  {
+    "ticker": "INFY",
+    "price": 1011.3,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 31.7336357579928,
+      "EMA20": 1100.379888312186,
+      "EMA50": 1163.3475246139185,
+      "MACD.macd": -41.799292237669306,
+      "MACD.signal": -31.215803381129597
+    },
+    "tech_4h": {
+      "RSI": 29.05759443675683,
+      "EMA20": 1064.2961627636782,
+      "EMA50": 1113.2918113334642,
+      "MACD.macd": -34.048405506471454,
+      "MACD.signal": -31.7082448715284
     },
     "sector": "Technology",
-    "timestamp": 1782791247.394449,
+    "timestamp": 1782806104.832433,
     "fundamentals": {
-      "trailingPE": 13.541804,
-      "forwardPE": 12.461596,
+      "trailingPE": 13.398702,
+      "forwardPE": 12.329907,
       "debtToEquity": 9.827,
       "returnOnEquity": 0.31439
     }
