@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "RELIANCE",
-    "price": 1279.8,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 40.69576688753817,
-      "EMA20": 1305.4181111871817,
-      "EMA50": 1326.697891936169,
-      "MACD.macd": -9.146986343352864,
-      "MACD.signal": -8.23314144644613
-    },
-    "tech_4h": {
-      "RSI": 39.812443488955935,
-      "EMA20": 1301.4084910159625,
-      "EMA50": 1310.5342467392074,
-      "MACD.macd": -5.870013696359592,
-      "MACD.signal": -2.880376180677655
-    },
-    "sector": "Energy",
-    "timestamp": 1783632275.8065774,
-    "fundamentals": {
-      "trailingPE": 21.433598,
-      "forwardPE": 17.832182,
-      "debtToEquity": 36.653,
-      "returnOnEquity": 0.09139
-    }
-  },
-  {
     "ticker": "TCS",
     "price": 2049.5,
     "is_double_confirmed": false,
@@ -45,12 +18,39 @@
       "MACD.signal": -21.826264330918672
     },
     "sector": "Technology",
-    "timestamp": 1783632275.821466,
+    "timestamp": 1783654049.9217598,
     "fundamentals": {
-      "trailingPE": 15.069853,
+      "trailingPE": 15.128811,
       "forwardPE": 12.511141,
       "debtToEquity": 10.389,
       "returnOnEquity": 0.48395002
+    }
+  },
+  {
+    "ticker": "RELIANCE",
+    "price": 1279.8,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 40.69576688753817,
+      "EMA20": 1305.4181111871817,
+      "EMA50": 1326.697891936169,
+      "MACD.macd": -9.146986343352864,
+      "MACD.signal": -8.23314144644613
+    },
+    "tech_4h": {
+      "RSI": 39.812443488955935,
+      "EMA20": 1301.4084910159625,
+      "EMA50": 1310.5342467392074,
+      "MACD.macd": -5.870013696359592,
+      "MACD.signal": -2.880376180677655
+    },
+    "sector": "Energy",
+    "timestamp": 1783654049.9488132,
+    "fundamentals": {
+      "trailingPE": 21.369179,
+      "forwardPE": 17.832182,
+      "debtToEquity": 36.653,
+      "returnOnEquity": 0.09139
     }
   }
 ]
