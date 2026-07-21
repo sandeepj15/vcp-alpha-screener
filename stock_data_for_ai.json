@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "HDFCBANK",
-    "price": 777.6,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 42.59883462967622,
-      "EMA20": 802.3819378937911,
-      "EMA50": 794.8792176389052,
-      "MACD.macd": 7.2968136528506875,
-      "MACD.signal": 10.492354016244732
-    },
-    "tech_4h": {
-      "RSI": 34.70623167921546,
-      "EMA20": 807.2565251089568,
-      "EMA50": 800.2523351075787,
-      "MACD.macd": -1.7418454051775143,
-      "MACD.signal": 3.207334046050325
-    },
-    "sector": "Financial Services",
-    "timestamp": 1784581979.6545947,
-    "fundamentals": {
-      "trailingPE": 17.345526,
-      "forwardPE": 12.421725,
-      "debtToEquity": null,
-      "returnOnEquity": 0.13838
-    }
-  },
-  {
     "ticker": "ICICIBANK",
     "price": 1460.2,
     "is_double_confirmed": false,
@@ -45,12 +18,39 @@
       "MACD.signal": 13.804605561201308
     },
     "sector": "Financial Services",
-    "timestamp": 1784581979.7075818,
+    "timestamp": 1784602009.6781335,
     "fundamentals": {
-      "trailingPE": 19.518782,
+      "trailingPE": 19.3046,
       "forwardPE": 15.738011,
       "debtToEquity": null,
       "returnOnEquity": 0.16073999
+    }
+  },
+  {
+    "ticker": "HDFCBANK",
+    "price": 777.6,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 42.59883462967622,
+      "EMA20": 802.3819378937911,
+      "EMA50": 794.8792176389052,
+      "MACD.macd": 7.2968136528506875,
+      "MACD.signal": 10.492354016244732
+    },
+    "tech_4h": {
+      "RSI": 34.70623167921546,
+      "EMA20": 807.2565251089568,
+      "EMA50": 800.2523351075787,
+      "MACD.macd": -1.7418454051775143,
+      "MACD.signal": 3.207334046050325
+    },
+    "sector": "Financial Services",
+    "timestamp": 1784602009.7106206,
+    "fundamentals": {
+      "trailingPE": 18.283564,
+      "forwardPE": 12.421725,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13838
     }
   }
 ]
