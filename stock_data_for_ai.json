@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "ticker": "HDFCBANK",
+    "price": 725.15,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 33.76176230068279,
+      "EMA20": 742.3107962772763,
+      "EMA50": 761.9282408771755,
+      "MACD.macd": -14.116251579698542,
+      "MACD.signal": -14.061636326216433
+    },
+    "tech_4h": {
+      "RSI": 34.26011903567307,
+      "EMA20": 732.4604801455217,
+      "EMA50": 748.0388004280189,
+      "MACD.macd": -6.625048757288596,
+      "MACD.signal": -7.920642646920956
+    },
+    "sector": "Financial Services",
+    "timestamp": 1787027774.4075165,
+    "fundamentals": {
+      "trailingPE": 15.814612,
+      "forwardPE": 11.583067,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13838
+    }
+  }
+]
