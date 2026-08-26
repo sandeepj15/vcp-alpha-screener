@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "ticker": "INFY",
+    "price": 1128.6,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 48.790180999893806,
+      "EMA20": 1136.4817430181895,
+      "EMA50": 1133.226930133468,
+      "MACD.macd": 4.416626991532212,
+      "MACD.signal": 10.042102697705976
+    },
+    "tech_4h": {
+      "RSI": 46.00259773440594,
+      "EMA20": 1135.6039492819789,
+      "EMA50": 1132.6854256705376,
+      "MACD.macd": -5.409906958591819,
+      "MACD.signal": -4.198394397038099
+    },
+    "sector": "Technology",
+    "timestamp": 1787719211.7190182,
+    "fundamentals": {
+      "trailingPE": 14.3807335,
+      "forwardPE": 14.122337,
+      "debtToEquity": 9.541,
+      "returnOnEquity": 0.32
+    }
+  },
+  {
+    "ticker": "ICICIBANK",
+    "price": 1440.7,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 57.63028710934646,
+      "EMA20": 1423.1135719076299,
+      "EMA50": 1403.1630665480645,
+      "MACD.macd": 2.066584447548621,
+      "MACD.signal": 3.507548351268357
+    },
+    "tech_4h": {
+      "RSI": 60.547831793107896,
+      "EMA20": 1418.4521221692696,
+      "EMA50": 1417.896503671908,
+      "MACD.macd": -0.1953222487943549,
+      "MACD.signal": -3.5785845400025815
+    },
+    "sector": "Financial Services",
+    "timestamp": 1787719211.7313178,
+    "fundamentals": {
+      "trailingPE": 18.508097,
+      "forwardPE": 15.322341,
+      "debtToEquity": null,
+      "returnOnEquity": 0.16073999
+    }
+  }
+]
