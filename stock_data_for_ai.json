@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "ICICIBANK",
-    "price": 1454,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 59.74041847072932,
-      "EMA20": 1426.8237492814367,
-      "EMA50": 1406.9665028772943,
-      "MACD.macd": 4.66457209561122,
-      "MACD.signal": 3.4040960269927614
-    },
-    "tech_4h": {
-      "RSI": 58.498858411222535,
-      "EMA20": 1428.1779947736245,
-      "EMA50": 1422.7264849466937,
-      "MACD.macd": 5.146623325526662,
-      "MACD.signal": 2.4011822993111127
-    },
-    "sector": "Financial Services",
-    "timestamp": 1788191697.2264884,
-    "fundamentals": {
-      "trailingPE": 18.78553,
-      "forwardPE": 15.468085,
-      "debtToEquity": null,
-      "returnOnEquity": 0.16073999
-    }
-  },
-  {
     "ticker": "RELIANCE",
     "price": 1277,
     "is_double_confirmed": false,
@@ -45,12 +18,39 @@
       "MACD.signal": -3.7157060550697114
     },
     "sector": "Energy",
-    "timestamp": 1788191697.2707653,
+    "timestamp": 1788211234.166764,
     "fundamentals": {
       "trailingPE": 23.129868,
       "forwardPE": 17.86902,
       "debtToEquity": 36.653,
       "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "ICICIBANK",
+    "price": 1454,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 59.74041847072932,
+      "EMA20": 1426.8237492814367,
+      "EMA50": 1406.9665028772943,
+      "MACD.macd": 4.66457209561122,
+      "MACD.signal": 3.4040960269927614
+    },
+    "tech_4h": {
+      "RSI": 58.498858411222535,
+      "EMA20": 1428.1779947736245,
+      "EMA50": 1422.7264849466937,
+      "MACD.macd": 5.146623325526662,
+      "MACD.signal": 2.4011822993111127
+    },
+    "sector": "Financial Services",
+    "timestamp": 1788211234.2015207,
+    "fundamentals": {
+      "trailingPE": 18.78553,
+      "forwardPE": 15.468085,
+      "debtToEquity": null,
+      "returnOnEquity": 0.16073999
     }
   }
 ]
