@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "INFY",
+    "price": 1082,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 39.08168753883695,
+      "EMA20": 1126.2667615759183,
+      "EMA50": 1129.697083848187,
+      "MACD.macd": -5.681573888444063,
+      "MACD.signal": 1.10940607790464
+    },
+    "tech_4h": {
+      "RSI": 31.117930485608255,
+      "EMA20": 1117.3182488965545,
+      "EMA50": 1125.2363167319509,
+      "MACD.macd": -11.198676197565192,
+      "MACD.signal": -5.758180189586778
+    },
+    "sector": "Technology",
+    "timestamp": 1788906294.3245435,
+    "fundamentals": {
+      "trailingPE": 14.153042,
+      "forwardPE": 13.525693,
+      "debtToEquity": 9.541,
+      "returnOnEquity": 0.32
+    }
+  },
+  {
     "ticker": "RELIANCE",
     "price": 1294.9,
     "is_double_confirmed": true,
@@ -18,9 +45,9 @@
       "MACD.signal": 0.358371680208882
     },
     "sector": "Energy",
-    "timestamp": 1788883816.6924152,
+    "timestamp": 1788906294.330477,
     "fundamentals": {
-      "trailingPE": 23.655462,
+      "trailingPE": 23.432863,
       "forwardPE": 18.138649,
       "debtToEquity": 36.653,
       "returnOnEquity": null
@@ -45,39 +72,12 @@
       "MACD.signal": -4.397239351624305
     },
     "sector": "Technology",
-    "timestamp": 1788883816.7139795,
+    "timestamp": 1788906294.9590943,
     "fundamentals": {
       "trailingPE": 16.396482,
       "forwardPE": 13.880077,
       "debtToEquity": 10.211,
       "returnOnEquity": 0.47743
-    }
-  },
-  {
-    "ticker": "INFY",
-    "price": 1082,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 39.08168753883695,
-      "EMA20": 1126.2667615759183,
-      "EMA50": 1129.697083848187,
-      "MACD.macd": -5.681573888444063,
-      "MACD.signal": 1.10940607790464
-    },
-    "tech_4h": {
-      "RSI": 31.117930485608255,
-      "EMA20": 1117.3182488965545,
-      "EMA50": 1125.2363167319509,
-      "MACD.macd": -11.198676197565192,
-      "MACD.signal": -5.758180189586778
-    },
-    "sector": "Technology",
-    "timestamp": 1788883816.7428691,
-    "fundamentals": {
-      "trailingPE": 14.153042,
-      "forwardPE": 13.525693,
-      "debtToEquity": 9.541,
-      "returnOnEquity": 0.32
     }
   }
 ]
