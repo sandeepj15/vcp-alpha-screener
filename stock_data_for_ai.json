@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "HDFCBANK",
+    "price": 687.1,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 29.370998118888224,
+      "EMA20": 716.3681967848178,
+      "EMA50": 738.5087895691231,
+      "MACD.macd": -12.55492692703308,
+      "MACD.signal": -11.86496625584456
+    },
+    "tech_4h": {
+      "RSI": 27.53691276672079,
+      "EMA20": 708.6465262514248,
+      "EMA50": 721.6028673058682,
+      "MACD.macd": -6.726640635469607,
+      "MACD.signal": -5.570214543858016
+    },
+    "sector": "Financial Services",
+    "timestamp": 1788992343.7689016,
+    "fundamentals": {
+      "trailingPE": 15.012016,
+      "forwardPE": 10.976038,
+      "debtToEquity": null,
+      "returnOnEquity": 0.13838
+    }
+  },
+  {
     "ticker": "TCS",
     "price": 2208,
     "is_double_confirmed": false,
@@ -18,7 +45,7 @@
       "MACD.signal": -9.807376951609966
     },
     "sector": "Technology",
-    "timestamp": 1788969858.2017531,
+    "timestamp": 1788992343.804033,
     "fundamentals": {
       "trailingPE": 16.047678,
       "forwardPE": 13.587768,
@@ -45,39 +72,12 @@
       "MACD.signal": -10.367690393316195
     },
     "sector": "Technology",
-    "timestamp": 1788969858.2618222,
+    "timestamp": 1788992343.829643,
     "fundamentals": {
       "trailingPE": 13.529411,
       "forwardPE": 12.938163,
       "debtToEquity": 9.541,
       "returnOnEquity": 0.32
-    }
-  },
-  {
-    "ticker": "HDFCBANK",
-    "price": 687.1,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 29.370998118888224,
-      "EMA20": 716.3681967848178,
-      "EMA50": 738.5087895691231,
-      "MACD.macd": -12.55492692703308,
-      "MACD.signal": -11.86496625584456
-    },
-    "tech_4h": {
-      "RSI": 27.53691276672079,
-      "EMA20": 708.6465262514248,
-      "EMA50": 721.6028673058682,
-      "MACD.macd": -6.726640635469607,
-      "MACD.signal": -5.570214543858016
-    },
-    "sector": "Financial Services",
-    "timestamp": 1788969858.2722244,
-    "fundamentals": {
-      "trailingPE": 15.012016,
-      "forwardPE": 10.976038,
-      "debtToEquity": null,
-      "returnOnEquity": 0.13838
     }
   }
 ]
