@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "INFY",
+    "price": 1035,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 31.814747496894313,
+      "EMA20": 1117.5746890448784,
+      "EMA50": 1125.9834727168857,
+      "MACD.macd": -12.140295841373018,
+      "MACD.signal": -1.5405343059508918
+    },
+    "tech_4h": {
+      "RSI": 21.250718120719,
+      "EMA20": 1102.1498590740503,
+      "EMA50": 1118.2001524438408,
+      "MACD.macd": -20.338155195387117,
+      "MACD.signal": -10.367690393316195
+    },
+    "sector": "Technology",
+    "timestamp": 1789011036.6114922,
+    "fundamentals": {
+      "trailingPE": 14.145142,
+      "forwardPE": 12.938163,
+      "debtToEquity": 9.541,
+      "returnOnEquity": 0.32
+    }
+  },
+  {
     "ticker": "HDFCBANK",
     "price": 687.1,
     "is_double_confirmed": true,
@@ -18,9 +45,9 @@
       "MACD.signal": -5.570214543858016
     },
     "sector": "Financial Services",
-    "timestamp": 1788992343.7689016,
+    "timestamp": 1789011036.6179168,
     "fundamentals": {
-      "trailingPE": 15.012016,
+      "trailingPE": 15.361054,
       "forwardPE": 10.976038,
       "debtToEquity": null,
       "returnOnEquity": 0.13838
@@ -45,39 +72,12 @@
       "MACD.signal": -9.807376951609966
     },
     "sector": "Technology",
-    "timestamp": 1788992343.804033,
+    "timestamp": 1789011036.6522937,
     "fundamentals": {
-      "trailingPE": 16.047678,
+      "trailingPE": 16.393198,
       "forwardPE": 13.587768,
       "debtToEquity": 10.211,
       "returnOnEquity": 0.47743
-    }
-  },
-  {
-    "ticker": "INFY",
-    "price": 1035,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 31.814747496894313,
-      "EMA20": 1117.5746890448784,
-      "EMA50": 1125.9834727168857,
-      "MACD.macd": -12.140295841373018,
-      "MACD.signal": -1.5405343059508918
-    },
-    "tech_4h": {
-      "RSI": 21.250718120719,
-      "EMA20": 1102.1498590740503,
-      "EMA50": 1118.2001524438408,
-      "MACD.macd": -20.338155195387117,
-      "MACD.signal": -10.367690393316195
-    },
-    "sector": "Technology",
-    "timestamp": 1788992343.829643,
-    "fundamentals": {
-      "trailingPE": 13.529411,
-      "forwardPE": 12.938163,
-      "debtToEquity": 9.541,
-      "returnOnEquity": 0.32
     }
   }
 ]
