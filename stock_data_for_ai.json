@@ -1,29 +1,56 @@
 [
   {
-    "ticker": "RELIANCE",
-    "price": 1219.2,
-    "is_double_confirmed": true,
+    "ticker": "INFY",
+    "price": 996.1,
+    "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 34.92223839878585,
-      "EMA20": 1263.5256414580674,
-      "EMA50": 1286.1311971975358,
-      "MACD.macd": -19.276270077582012,
-      "MACD.signal": -14.970625072027357
+      "RSI": 29.405626843711033,
+      "EMA20": 1061.0028236487906,
+      "EMA50": 1093.9973572260049,
+      "MACD.macd": -29.421613529087153,
+      "MACD.signal": -22.900822716876043
     },
     "tech_4h": {
-      "RSI": 28.230916842584136,
-      "EMA20": 1250.8138006522468,
-      "EMA50": 1271.9191629789118,
-      "MACD.macd": -14.099179215108961,
-      "MACD.signal": -13.721246722624425
+      "RSI": 24.886428494154572,
+      "EMA20": 1033.6610106319847,
+      "EMA50": 1067.6575416108726,
+      "MACD.macd": -22.264857658337746,
+      "MACD.signal": -20.26801650555813
     },
-    "sector": "Energy",
-    "timestamp": 1790308332.601872,
+    "sector": "Technology",
+    "timestamp": 1790328405.2372775,
     "fundamentals": {
-      "trailingPE": 22.627575,
-      "forwardPE": 17.076899,
-      "debtToEquity": 36.653,
-      "returnOnEquity": null
+      "trailingPE": 12.924773,
+      "forwardPE": 12.439507,
+      "debtToEquity": 9.541,
+      "returnOnEquity": 0.32
+    }
+  },
+  {
+    "ticker": "ICICIBANK",
+    "price": 1326.5,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 28.937102447507797,
+      "EMA20": 1370.3583209139608,
+      "EMA50": 1387.5637765738004,
+      "MACD.macd": -23.796940075818384,
+      "MACD.signal": -18.322817303937867
+    },
+    "tech_4h": {
+      "RSI": 25.00191657938585,
+      "EMA20": 1350.3117120025588,
+      "EMA50": 1377.311358943083,
+      "MACD.macd": -17.567100488462984,
+      "MACD.signal": -18.006360278483662
+    },
+    "sector": "Financial Services",
+    "timestamp": 1790328405.2457397,
+    "fundamentals": {
+      "trailingPE": 17.212988,
+      "forwardPE": 14.1,
+      "debtToEquity": null,
+      "returnOnEquity": 0.16073999
     }
   }
 ]
