@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "RELIANCE",
-    "price": 1182,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 29.392273865280345,
-      "EMA20": 1247.1550777195641,
-      "EMA50": 1276.535193998484,
-      "MACD.macd": -25.2303599838433,
-      "MACD.signal": -18.817616105762475
-    },
-    "tech_4h": {
-      "RSI": 22.67555480563533,
-      "EMA20": 1228.8399040483985,
-      "EMA50": 1257.291846338533,
-      "MACD.macd": -20.49999966996552,
-      "MACD.signal": -16.969754263584104
-    },
-    "sector": "Energy",
-    "timestamp": 1790704090.8245182,
-    "fundamentals": {
-      "trailingPE": 21.409164,
-      "forwardPE": 16.553135,
-      "debtToEquity": 36.653,
-      "returnOnEquity": null
-    }
-  },
-  {
     "ticker": "TCS",
     "price": 2032.4,
     "is_double_confirmed": true,
@@ -45,9 +18,9 @@
       "MACD.signal": -46.29532579674975
     },
     "sector": "Technology",
-    "timestamp": 1790704090.8700235,
+    "timestamp": 1790724599.4655943,
     "fundamentals": {
-      "trailingPE": 14.849128,
+      "trailingPE": 14.759623,
       "forwardPE": 12.505949,
       "debtToEquity": 10.211,
       "returnOnEquity": 0.47743
@@ -72,12 +45,39 @@
       "MACD.signal": -19.695976880754944
     },
     "sector": "Financial Services",
-    "timestamp": 1790704090.8704412,
+    "timestamp": 1790724599.5129476,
     "fundamentals": {
       "trailingPE": 16.705881,
       "forwardPE": 13.746808,
       "debtToEquity": null,
       "returnOnEquity": 0.16073999
+    }
+  },
+  {
+    "ticker": "RELIANCE",
+    "price": 1182,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 29.392273865280345,
+      "EMA20": 1247.1550777195641,
+      "EMA50": 1276.535193998484,
+      "MACD.macd": -25.2303599838433,
+      "MACD.signal": -18.817616105762475
+    },
+    "tech_4h": {
+      "RSI": 22.67555480563533,
+      "EMA20": 1228.8399040483985,
+      "EMA50": 1257.291846338533,
+      "MACD.macd": -20.49999966996552,
+      "MACD.signal": -16.969754263584104
+    },
+    "sector": "Energy",
+    "timestamp": 1790724599.5173235,
+    "fundamentals": {
+      "trailingPE": 21.409164,
+      "forwardPE": 16.553135,
+      "debtToEquity": 36.653,
+      "returnOnEquity": null
     }
   }
 ]
