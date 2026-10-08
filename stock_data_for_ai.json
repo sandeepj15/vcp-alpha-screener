@@ -1,27 +1,54 @@
 [
   {
-    "ticker": "HDFCBANK",
-    "price": 702.75,
+    "ticker": "RELIANCE",
+    "price": 1194.1,
     "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 42.5242514370294,
-      "EMA20": 717.7747418102333,
-      "EMA50": 728.6497194502997,
-      "MACD.macd": -3.5531678559602824,
-      "MACD.signal": -2.0187063616602803
+      "RSI": 39.552601270735664,
+      "EMA20": 1223.5999219358466,
+      "EMA50": 1258.9433834121378,
+      "MACD.macd": -24.571711760503604,
+      "MACD.signal": -24.45274413216447
     },
     "tech_4h": {
-      "RSI": 41.230603151465246,
-      "EMA20": 715.0128685227946,
-      "EMA50": 719.2201936522279,
-      "MACD.macd": -4.480315407103717,
-      "MACD.signal": -2.3840332159261446
+      "RSI": 40.33387818103899,
+      "EMA20": 1207.5362147211954,
+      "EMA50": 1235.194287499522,
+      "MACD.macd": -12.204471310529243,
+      "MACD.signal": -16.230480630273963
+    },
+    "sector": "Energy",
+    "timestamp": 1791435485.8656375,
+    "fundamentals": {
+      "trailingPE": 21.733334,
+      "forwardPE": 16.743073,
+      "debtToEquity": 46.278,
+      "returnOnEquity": null
+    }
+  },
+  {
+    "ticker": "HDFCBANK",
+    "price": 699.7,
+    "is_double_confirmed": true,
+    "tech_1d": {
+      "RSI": 41.40733261646012,
+      "EMA20": 716.0533378283063,
+      "EMA50": 727.5144363346017,
+      "MACD.macd": -4.574174695258762,
+      "MACD.signal": -2.5298000283799764
+    },
+    "tech_4h": {
+      "RSI": 37.87129054560958,
+      "EMA20": 713.5545000920523,
+      "EMA50": 718.4546958619444,
+      "MACD.macd": -5.109177505326784,
+      "MACD.signal": -2.9290620738062723
     },
     "sector": "Financial Services",
-    "timestamp": 1791406996.9489505,
+    "timestamp": 1791435485.9365096,
     "fundamentals": {
-      "trailingPE": 15.360656,
-      "forwardPE": 11.220117,
+      "trailingPE": 15.423767,
+      "forwardPE": 11.128311,
       "debtToEquity": null,
       "returnOnEquity": 0.13838
     }
