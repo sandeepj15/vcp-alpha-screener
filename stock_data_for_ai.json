@@ -1,32 +1,5 @@
 [
   {
-    "ticker": "ICICIBANK",
-    "price": 1424.5,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 62.05195075219143,
-      "EMA20": 1382.0653339392277,
-      "EMA50": 1378.284982688799,
-      "MACD.macd": 10.64829068812901,
-      "MACD.signal": 6.255028430702351
-    },
-    "tech_4h": {
-      "RSI": 65.15531792598466,
-      "EMA20": 1390.0590085183462,
-      "EMA50": 1377.6561319527987,
-      "MACD.macd": 10.230400071838176,
-      "MACD.signal": 8.2177195009526
-    },
-    "sector": "Financial Services",
-    "timestamp": 1793706050.6152065,
-    "fundamentals": {
-      "trailingPE": 17.493553,
-      "forwardPE": 14.545264,
-      "debtToEquity": null,
-      "returnOnEquity": 0.1649
-    }
-  },
-  {
     "ticker": "TCS",
     "price": 2499.1,
     "is_double_confirmed": false,
@@ -45,12 +18,39 @@
       "MACD.signal": 56.99599639643553
     },
     "sector": "Technology",
-    "timestamp": 1793706050.6156244,
+    "timestamp": 1793733099.6660953,
     "fundamentals": {
       "trailingPE": 17.517876,
       "forwardPE": 15.50981,
       "debtToEquity": 9.83,
       "returnOnEquity": 0.45573002
+    }
+  },
+  {
+    "ticker": "ICICIBANK",
+    "price": 1424.5,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 62.05195075219143,
+      "EMA20": 1382.0653339392277,
+      "EMA50": 1378.284982688799,
+      "MACD.macd": 10.64829068812901,
+      "MACD.signal": 6.255028430702351
+    },
+    "tech_4h": {
+      "RSI": 65.15531792598466,
+      "EMA20": 1390.0590085183462,
+      "EMA50": 1377.6561319527987,
+      "MACD.macd": 10.230400071838176,
+      "MACD.signal": 8.2177195009526
+    },
+    "sector": "Financial Services",
+    "timestamp": 1793733099.735205,
+    "fundamentals": {
+      "trailingPE": 17.493553,
+      "forwardPE": 14.545264,
+      "debtToEquity": null,
+      "returnOnEquity": 0.1649
     }
   }
 ]
