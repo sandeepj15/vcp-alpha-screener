@@ -1,27 +1,54 @@
 [
   {
-    "ticker": "TCS",
-    "price": 2501.7,
+    "ticker": "ICICIBANK",
+    "price": 1424.5,
     "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 67.0487887214334,
-      "EMA20": 2390.6257150405,
-      "EMA50": 2310.1840901023434,
-      "MACD.macd": 86.57400492874694,
-      "MACD.signal": 74.9154759282255
+      "RSI": 62.05195075219143,
+      "EMA20": 1382.0653339392277,
+      "EMA50": 1378.284982688799,
+      "MACD.macd": 10.64829068812901,
+      "MACD.signal": 6.255028430702351
     },
     "tech_4h": {
-      "RSI": 61.92309125707934,
-      "EMA20": 2464.0847721499285,
-      "EMA50": 2365.4604723935718,
-      "MACD.macd": 50.942510696912905,
-      "MACD.signal": 63.72836652303497
+      "RSI": 65.15531792598466,
+      "EMA20": 1390.0590085183462,
+      "EMA50": 1377.6561319527987,
+      "MACD.macd": 10.230400071838176,
+      "MACD.signal": 8.2177195009526
+    },
+    "sector": "Financial Services",
+    "timestamp": 1793706050.6152065,
+    "fundamentals": {
+      "trailingPE": 17.493553,
+      "forwardPE": 14.545264,
+      "debtToEquity": null,
+      "returnOnEquity": 0.1649
+    }
+  },
+  {
+    "ticker": "TCS",
+    "price": 2499.1,
+    "is_double_confirmed": false,
+    "tech_1d": {
+      "RSI": 66.63911540225308,
+      "EMA20": 2400.956599322357,
+      "EMA50": 2317.5925571571534,
+      "MACD.macd": 84.24044132627841,
+      "MACD.signal": 76.78046900783609
+    },
+    "tech_4h": {
+      "RSI": 60.43592185165976,
+      "EMA20": 2468.633566317742,
+      "EMA50": 2374.9693940530738,
+      "MACD.macd": 43.485839291254706,
+      "MACD.signal": 56.99599639643553
     },
     "sector": "Technology",
-    "timestamp": 1793671312.518027,
+    "timestamp": 1793706050.6156244,
     "fundamentals": {
-      "trailingPE": 17.536098,
-      "forwardPE": 15.525946,
+      "trailingPE": 17.517876,
+      "forwardPE": 15.50981,
       "debtToEquity": 9.83,
       "returnOnEquity": 0.45573002
     }
