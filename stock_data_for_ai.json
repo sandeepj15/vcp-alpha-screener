@@ -1,56 +1,29 @@
 [
   {
-    "ticker": "HDFCBANK",
-    "price": 788.25,
-    "is_double_confirmed": true,
+    "ticker": "RELIANCE",
+    "price": 1324,
+    "is_double_confirmed": false,
     "tech_1d": {
-      "RSI": 73.93144960137093,
-      "EMA20": 718.9609423857461,
-      "EMA50": 720.1533562506831,
-      "MACD.macd": 8.624568480189964,
-      "MACD.signal": -1.1685508578088464
+      "RSI": 68.74053478548709,
+      "EMA20": 1254.219938680833,
+      "EMA50": 1246.8769078212135,
+      "MACD.macd": 27.794097040765564,
+      "MACD.signal": 11.504058359872248
     },
     "tech_4h": {
-      "RSI": 83.98223116495457,
-      "EMA20": 727.064101362457,
-      "EMA50": 715.9149702000424,
-      "MACD.macd": 17.946280764844005,
-      "MACD.signal": 7.790819559217483
+      "RSI": 74.24743872637615,
+      "EMA20": 1264.2420904677604,
+      "EMA50": 1235.1313735113847,
+      "MACD.macd": 34.66135279482069,
+      "MACD.signal": 26.053305590016723
     },
-    "sector": "Financial Services",
-    "timestamp": 1794113668.792869,
+    "sector": "Energy",
+    "timestamp": 1794149362.6642954,
     "fundamentals": {
-      "trailingPE": 17.229507,
-      "forwardPE": 12.591853,
-      "debtToEquity": null,
-      "returnOnEquity": 0.11005
-    }
-  },
-  {
-    "ticker": "ICICIBANK",
-    "price": 1571.2,
-    "is_double_confirmed": true,
-    "tech_1d": {
-      "RSI": 79.64807162107063,
-      "EMA20": 1413.5174090799223,
-      "EMA50": 1392.0947488398467,
-      "MACD.macd": 31.2675835673881,
-      "MACD.signal": 14.266024854902142
-    },
-    "tech_4h": {
-      "RSI": 84.01351941425531,
-      "EMA20": 1438.0191462492762,
-      "EMA50": 1401.8047866889117,
-      "MACD.macd": 37.304616723751906,
-      "MACD.signal": 20.85268319864307
-    },
-    "sector": "Financial Services",
-    "timestamp": 1794113668.8273742,
-    "fundamentals": {
-      "trailingPE": 19.2951,
-      "forwardPE": 16.043186,
-      "debtToEquity": null,
-      "returnOnEquity": 0.1649
+      "trailingPE": 21.81938,
+      "forwardPE": 17.958775,
+      "debtToEquity": 44.325,
+      "returnOnEquity": 0.08759
     }
   }
 ]
