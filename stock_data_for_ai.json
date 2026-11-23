@@ -1,56 +1,29 @@
 [
   {
-    "ticker": "HDFCBANK",
-    "price": 846,
+    "ticker": "TCS",
+    "price": 2477.6,
     "is_double_confirmed": true,
     "tech_1d": {
-      "RSI": 77.35354512871625,
-      "EMA20": 779.7057681099614,
-      "EMA50": 750.6874975790095,
-      "MACD.macd": 30.92046414519882,
-      "MACD.signal": 23.953149886900057
+      "RSI": 58.643528979422,
+      "EMA20": 2419.022892733352,
+      "EMA50": 2366.5217253476644,
+      "MACD.macd": 14.300081825814686,
+      "MACD.signal": 29.817593115109492
     },
     "tech_4h": {
-      "RSI": 79.5480903130449,
-      "EMA20": 804.4703172992462,
-      "EMA50": 768.2047228638093,
-      "MACD.macd": 24.00811446974751,
-      "MACD.signal": 23.54532564843824
+      "RSI": 59.293853835044914,
+      "EMA20": 2414.449358811032,
+      "EMA50": 2404.7435656849116,
+      "MACD.macd": -13.058296866302499,
+      "MACD.signal": -14.859575641157253
     },
-    "sector": "Financial Services",
-    "timestamp": 1795383650.2118528,
+    "sector": "Technology",
+    "timestamp": 1795414346.2006807,
     "fundamentals": {
-      "trailingPE": 18.491804,
-      "forwardPE": 13.806265,
-      "debtToEquity": null,
-      "returnOnEquity": 0.11005
-    }
-  },
-  {
-    "ticker": "ICICIBANK",
-    "price": 1640,
-    "is_double_confirmed": false,
-    "tech_1d": {
-      "RSI": 80.25661653780335,
-      "EMA20": 1530.4465585347298,
-      "EMA50": 1459.1014375088394,
-      "MACD.macd": 62.587903601299786,
-      "MACD.signal": 53.75106328374822
-    },
-    "tech_4h": {
-      "RSI": 75.83396599830793,
-      "EMA20": 1576.3646246124672,
-      "EMA50": 1504.7100007944566,
-      "MACD.macd": 41.91014736436887,
-      "MACD.signal": 43.34097996125864
-    },
-    "sector": "Financial Services",
-    "timestamp": 1795383650.2437847,
-    "fundamentals": {
-      "trailingPE": 20.139997,
-      "forwardPE": 16.697657,
-      "debtToEquity": null,
-      "returnOnEquity": 0.1649
+      "trailingPE": 17.355951,
+      "forwardPE": 15.404015,
+      "debtToEquity": 9.83,
+      "returnOnEquity": 0.45573002
     }
   }
 ]
